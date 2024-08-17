@@ -1,5 +1,5 @@
 
-# SUN_TR_SKY130NM
+# JNW_TR_SKY130A
 
 # Who
 Carsten Wulff carsten@wulff.no
@@ -16,9 +16,9 @@ Library with digital cells, and standard transistors
 
 | What      | Path                                                                         | Comment    |
 |:----------|:-----------------------------------------------------------------------------|:-----------|
-| Schematic | [design/JNW_TR_SKY130NM/JNWTR_TOP.sch](design/JNW_TR_SKY130NM/JNWTR_TOP.sch) |            |
-| Layout    | [design/JNW_TR_SKY130NM/JNWTR_TOP.mag](design/JNW_TR_SKY130NM/JNWTR_TOP.mag) |            |
-| Verilog   | [design/JNW_TR_SKY130NM.v](design/JNW_TR_SKY130NM.v)                         | Not tested |
+| Schematic | [design/JNW_TR_SKY130A/JNWTR_TOP.sch](design/JNW_TR_SKY130A/JNWTR_TOP.sch) |            |
+| Layout    | [design/JNW_TR_SKY130A/JNWTR_TOP.mag](design/JNW_TR_SKY130A/JNWTR_TOP.mag) |            |
+| Verilog   | [design/JNW_TR_SKY130A.v](design/JNW_TR_SKY130A.v)                         | Not tested |
 
 
 
@@ -57,7 +57,7 @@ Library with digital cells, and standard transistors
 # Key parameters
 | Parameter           | Min     | Typ           | Max     | Unit  |
 | :---                | :-:     | :-:           | :-:     | :---: |
-| Technology          |         | SKY130NM  |         |       |
+| Technology          |         | SKY130A  |         |       |
 | AVDD                | 1.7    | 1.8           | 1.9    | V     |
 | Temperature         | -40     | 27            | 125     | C     |
 
