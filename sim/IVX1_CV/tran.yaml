@@ -1,0 +1,38 @@
+#<name>:
+#  src:
+#    - <paramters>
+#  typ: <typical spec value>
+#  name: <long name>
+#  min: <minimum spec value>
+#  max: <maximum spec value>
+#  scale: <scale, multiply result by scale>
+#  digits: <significant digits>
+#  unit: Unit
+
+tpdf:
+  src: tpdf
+  name: Falltime
+  typ: 11
+  max: 25
+  min: 5
+  scale: 1e12
+  digits: 2
+  unit: ps
+tpdr:
+  src: tpdr
+  name: Risetime
+  typ: 60
+  max: 110
+  min: 30
+  scale: 1e12
+  digits: 2
+  unit: ps
+tpd:
+  src: tpd
+  name: Delay
+  typ: 11
+  max: 60
+  min: 5
+  scale: 1e12
+  digits: 2
+  unit: ps

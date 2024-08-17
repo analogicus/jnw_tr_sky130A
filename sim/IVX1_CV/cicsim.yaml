@@ -1,0 +1,10 @@
+options:
+  useTmpDir: False
+  sha: True
+corner:
+  Lay: ''
+  Sch: ''
+ngspice:
+  library: JNW_TR_SKY130A
+  cell: JNWTR_TOP
+  options: ""
