@@ -35,6 +35,13 @@ Library with digital cells, and standard transistors
 | JNWTR_NCHDL | Unit NMOS   |
 | JNWTR_PCHDL | Unit PMOS   |
 
+
+| Name   |   gmid10_vgs |   gmid10_id |
+|:-------|-------------:|------------:|
+| NCHDL  |      806.916 |     22.8402 |
+| PCHDL  |     -841.475 |     5.22893 |
+
+
  
 # Digital cells
 
@@ -53,6 +60,9 @@ Library with digital cells, and standard transistors
 | JNWTR_TAPCELLB_CV | Bulk connection                                     |
 | JNWTR_TIEH_CV     | Tie high                                            |
 | JNWTR_TIEL_CV     | Tie low                                             |
+
+
+
 
 # Key parameters
 | Parameter           | Min     | Typ           | Max     | Unit  |
