@@ -1,0 +1,45 @@
+* Measure CNRATR_NCH_2C1F2
+.control
+
+load {cicname}.raw
+
+echo "MEAS_START"
+let gmid = gm/i(id)
+let ut = 1/(boltz/echarge*(27 - kelvin))
+let gmrds = gm/gds
+let gmrdsdB = 20*log10(gmrds)
+let ngmid = gmid/ut
+let idgm = 1/gmid
+let didgm = deriv(idgm)
+let idsq = i(id)/wl
+let rds = 1/gds
+
+
+print wl[0]
+
+meas dc gmid10_id find i(id) when gmid=10
+meas dc gmid10_vgs find v(g) when gmid=10
+meas dc gmid10_vth find vth when gmid=10
+meas dc gmid10_vdsat find vdsat when gmid=10
+meas dc gmid10_rds find v(rds) when gmid=10
+meas dc gmid10_gmrds find v(gmrds) when gmid=10
+meas dc gmid10_gmrds_db find v(gmrdsdB) when gmid=10
+
+meas dc gmid15_id find i(id) when gmid=15
+meas dc gmid15_vgs find v(g) when gmid=15
+meas dc gmid15_vth find vth when gmid=15
+meas dc gmid15_vdsat find vdsat when gmid=15
+meas dc gmid15_rds find v(rds) when gmid=15
+meas dc gmid15_gmrds find v(gmrds) when gmid=15
+meas dc gmid15_gmrds_db find v(gmrdsdB) when gmid=15
+
+
+*-
+*-
+
+
+write {cicname}_meas.raw
+
+
+echo "MEAS_END"
+.endc

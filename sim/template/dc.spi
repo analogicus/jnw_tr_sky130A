@@ -1,0 +1,82 @@
+*TB_SUN_TR_SKY130NM/TB_NCM
+*----------------------------------------------------------------
+* Include
+*----------------------------------------------------------------
+#ifdef Lay
+.include ../../../work/lpe/JNWTR_NCHDL_lpe.spi
+#else
+.include ../../../work/xsch/JNWTR_NCHDL.spice
+#endif
+
+*-----------------------------------------------------------------
+* OPTIONS
+*-----------------------------------------------------------------
+.option TNOM=27 GMIN=1e-15
+
+*-----------------------------------------------------------------
+* PARAMETERS
+*-----------------------------------------------------------------
+.param TRF = 10p
+
+.param AVDD = {vdda}
+
+*-----------------------------------------------------------------
+* FORCE
+*-----------------------------------------------------------------
+VSS  VSS  0     dc 0
+VD D 0 dc {AVDD}
+VG G 0 dc {AVDD}
+
+*-----------------------------------------------------------------
+* DUT
+*-----------------------------------------------------------------
+*XDUT D G 0 0 CNRATR_NCH_2C1F2
+VB B 0 dc 0
+VS S 0 dc 0
+.include ../xdut.spi
+*----------------------------------------------------------------
+* PROBE
+*----------------------------------------------------------------
+
+.save v(D) v(G) v(S) v(B) i(XDUT.D)
+
+
+*----------------------------------------------------------------
+* NGSPICE control
+*----------------------------------------------------------------
+.control
+set num_threads=8
+set color0=white
+set color1=black
+unset askquit
+
+save @m.xdut.xm1.msky130_fd_pr__nfet_01v8[gm]
++ @m.xdut.xm1.msky130_fd_pr__nfet_01v8[vth]
++ @m.xdut.xm1.msky130_fd_pr__nfet_01v8[vdsat]
++ @m.xdut.xm1.msky130_fd_pr__nfet_01v8[id]
++ @m.xdut.xm1.msky130_fd_pr__nfet_01v8[cgs]
++ @m.xdut.xm1.msky130_fd_pr__nfet_01v8[cgg]
++ @m.xdut.xm1.msky130_fd_pr__nfet_01v8[cgd]
++ @m.xdut.xm1.msky130_fd_pr__nfet_01v8[gds]
++ @m.xdut.xm1.msky130_fd_pr__nfet_01v8[w]
++ @m.xdut.xm1.msky130_fd_pr__nfet_01v8[l]
+
+
+optran 0 0 0 100p 2n 0
+
+dc VG 0 1.8 0.1
+
+let id = @m.xdut.xm1.msky130_fd_pr__nfet_01v8[id]
+let wl = (@m.xdut.xm1.msky130_fd_pr__nfet_01v8[w]/@m.xdut.xm1.msky130_fd_pr__nfet_01v8[l])
+let gm = @m.xdut.xm1.msky130_fd_pr__nfet_01v8[gm]
+let gds = @m.xdut.xm1.msky130_fd_pr__nfet_01v8[gds]
+let vdsat = @m.xdut.xm1.msky130_fd_pr__nfet_01v8[vdsat]
+let vth = @m.xdut.xm1.msky130_fd_pr__nfet_01v8[vth]
+
+write
+quit
+#endif
+
+.endc
+
+.end

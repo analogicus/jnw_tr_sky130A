@@ -1,0 +1,61 @@
+id:
+  src:
+    - gmid10_id
+    - gmid15_id
+  #name: Drain Current
+  scale: 1e6
+  digits: 2
+  unit: uA
+
+vgs:
+  src:
+    - gmid10_vgs
+    - gmid15_vgs
+  #name: Gate Source Voltage
+  scale: 1000
+  digits: 0
+  unit: mV
+
+vth:
+  src:
+    - gmid10_vth
+    - gmid15_vth
+  #name: Gate Source Voltage
+  scale: 1000
+  digits: 0
+  unit: mV
+
+vdsat:
+  src:
+    - gmid10_vdsat
+    - gmid15_vdsat
+  #name: Gate Source Voltage
+  scale: 1000
+  digits: 0
+  unit: mV
+
+rds:
+  src:
+    - gmid10_rds
+    - gmid15_rds
+  #name: Output resistance
+  scale: 1e-6
+  digits: 2
+  unit: MOhm
+
+gain:
+  src:
+    - gmid10_gmrds
+    - gmid15_gmrds
+  #name: Intrinsic gain
+  scale: 1
+  digits: 2
+
+gaindb:
+  src:
+    - gmid10_gmrds_db
+    - gmid15_gmrds_db
+  #name: Gain
+  scale: 1
+  digits: 2
+  unit: dB

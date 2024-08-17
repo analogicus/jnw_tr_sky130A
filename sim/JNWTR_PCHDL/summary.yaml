@@ -1,0 +1,16 @@
+description: CNRATR_NCH_2C1F2
+simulations:
+   dc:
+    name: DC sweep
+    description: |
+      Transistor parameters
+    data:
+      - name: Sch_typ
+        src: results/dc_Sch_typical
+        method: typical
+      - name: Sch_etc
+        src: results/dc_Sch_etc
+        method: minmax
+      - name: Sch_3std
+        src: results/dc_Sch_mc
+        method: 3std
