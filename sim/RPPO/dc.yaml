@@ -10,6 +10,7 @@
 #  unit: Unit
 res2:
   src: v(res2)
+  name: RPPO2
   min: 7
   typ: 9
   max: 11
@@ -18,6 +19,7 @@ res2:
   unit: kOhm
 res4:
   src: v(res4)
+  name: RPPO4
   min: 14
   typ: 18
   max: 22
@@ -26,6 +28,7 @@ res4:
   unit: kOhm
 res8:
   src: v(res8)
+  name: RPPO8
   min: 28
   typ: 36
   max: 44
@@ -34,6 +37,7 @@ res8:
   unit: kOhm
 res16:
   src: v(res16)
+  name: RPPO16
   min: 56
   typ: 72
   max: 88
