@@ -1,0 +1,14 @@
+* Measure dc
+.control
+
+load {cicname}.raw
+
+echo "MEAS_START"
+
+foreach res 2 4 8 16
+  print v(res$res)
+
+end
+
+echo "MEAS_END"
+.endc

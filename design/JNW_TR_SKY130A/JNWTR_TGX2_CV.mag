@@ -1,0 +1,89 @@
+magic
+tech sky130A
+magscale 1 1
+timestamp 1723845600
+<< checkpaint >>
+rect 0 0 1260 528
+<< locali >>
+rect 432 29 516 59
+rect 516 29 828 59
+rect 516 29 546 59
+rect 378 293 882 323
+rect 378 469 882 499
+rect 378 205 882 235
+rect 378 381 882 411
+rect 102 73 216 103
+rect 102 249 216 279
+rect 102 425 216 455
+rect 102 73 132 455
+rect 828 29 912 59
+rect 912 249 1044 279
+rect 912 29 942 279
+rect 1029 249 1059 455
+rect 990 73 1098 103
+rect 378 205 486 235
+rect 378 293 486 323
+<< poly >>
+rect 162 79 1098 97
+<< m1 >>
+rect 318 293 432 323
+rect 318 469 432 499
+rect 318 293 348 499
+rect 714 205 828 235
+rect 714 381 828 411
+rect 714 205 744 411
+<< m3 >>
+rect 774 0 874 528
+rect 378 0 478 528
+rect 774 0 874 528
+rect 378 0 478 528
+use JNWTR_NCHDL MN0 
+transform 1 0 0 0 1 0
+box 0 0 630 176
+use JNWTR_NCHDL MN1 
+transform 1 0 0 0 1 176
+box 0 176 630 352
+use JNWTR_NCHDL MN1b 
+transform 1 0 0 0 1 352
+box 0 352 630 528
+use JNWTR_PCHDL MP0 
+transform 1 0 630 0 1 0
+box 630 0 1260 176
+use JNWTR_PCHDL MP1 
+transform 1 0 630 0 1 176
+box 630 176 1260 352
+use JNWTR_PCHDL MP1b 
+transform 1 0 630 0 1 352
+box 630 352 1260 528
+use JNWTR_cut_M1M2_2x1 xcut0 
+transform 1 0 378 0 1 293
+box 378 293 470 327
+use JNWTR_cut_M1M2_2x1 xcut1 
+transform 1 0 378 0 1 469
+box 378 469 470 503
+use JNWTR_cut_M1M2_2x1 xcut2 
+transform 1 0 774 0 1 205
+box 774 205 866 239
+use JNWTR_cut_M1M2_2x1 xcut3 
+transform 1 0 774 0 1 381
+box 774 381 866 415
+use JNWTR_cut_M1M4_2x1 xcut4 
+transform 1 0 774 0 1 117
+box 774 117 874 155
+use JNWTR_cut_M1M4_2x1 xcut5 
+transform 1 0 378 0 1 117
+box 378 117 478 155
+<< labels >>
+flabel locali s 990 73 1098 103 0 FreeSans 400 0 0 0 C
+port 2 nsew signal bidirectional
+flabel locali s 378 205 486 235 0 FreeSans 400 0 0 0 A
+port 1 nsew signal bidirectional
+flabel locali s 378 293 486 323 0 FreeSans 400 0 0 0 B
+port 3 nsew signal bidirectional
+flabel m3 s 774 0 874 528 0 FreeSans 400 0 0 0 AVDD
+port 4 nsew signal bidirectional
+flabel m3 s 378 0 478 528 0 FreeSans 400 0 0 0 AVSS
+port 5 nsew signal bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 1260 528
+<< end >>

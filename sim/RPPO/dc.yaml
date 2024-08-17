@@ -1,0 +1,42 @@
+#<name>:
+#  src:
+#    - <paramters>
+#  typ: <typical spec value>
+#  name: <long name>
+#  min: <minimum spec value>
+#  max: <maximum spec value>
+#  scale: <scale, multiply result by scale>
+#  digits: <significant digits>
+#  unit: Unit
+res2:
+  src: v(res2)
+  min: 7
+  typ: 9
+  max: 11
+  scale: 1e-3
+  digits: 2
+  unit: kOhm
+res4:
+  src: v(res4)
+  min: 14
+  typ: 18
+  max: 22
+  scale: 1e-3
+  digits: 2
+  unit: kOhm
+res8:
+  src: v(res8)
+  min: 28
+  typ: 36
+  max: 44
+  scale: 1e-3
+  digits: 2
+  unit: kOhm
+res16:
+  src: v(res16)
+  min: 56
+  typ: 72
+  max: 88
+  scale: 1e-3
+  digits: 2
+  unit: kOhm

@@ -1,0 +1,50 @@
+magic
+tech sky130A
+magscale 1 1
+timestamp 1723845600
+<< checkpaint >>
+rect 0 0 1260 2552
+<< locali >>
+rect 216 2361 300 2391
+rect 300 2053 432 2083
+rect 300 2053 330 2391
+rect 102 1833 216 1863
+rect 102 2449 216 2479
+rect 102 1833 132 2479
+rect 990 865 1098 895
+rect 162 2449 270 2479
+rect 162 425 270 455
+rect 990 2449 1098 2479
+rect 378 2493 486 2523
+<< m3 >>
+rect 774 0 874 2552
+rect 378 0 478 2552
+rect 774 0 874 2552
+rect 378 0 478 2552
+use JNWTR_TAPCELLB_CV XA3 
+transform 1 0 0 0 1 0
+box 0 0 1260 176
+use JNWTR_DFRNQNX1_CV XA2 
+transform 1 0 0 0 1 176
+box 0 176 1260 2288
+use JNWTR_IVTRIX1_CV XA0 
+transform 1 0 0 0 1 2288
+box 0 2288 1260 2552
+<< labels >>
+flabel locali s 990 865 1098 895 0 FreeSans 400 0 0 0 D
+port 1 nsew signal bidirectional
+flabel locali s 162 2449 270 2479 0 FreeSans 400 0 0 0 C
+port 3 nsew signal bidirectional
+flabel locali s 162 425 270 455 0 FreeSans 400 0 0 0 CK
+port 2 nsew signal bidirectional
+flabel locali s 990 2449 1098 2479 0 FreeSans 400 0 0 0 CN
+port 4 nsew signal bidirectional
+flabel locali s 378 2493 486 2523 0 FreeSans 400 0 0 0 Y
+port 5 nsew signal bidirectional
+flabel m3 s 774 0 874 2552 0 FreeSans 400 0 0 0 AVDD
+port 6 nsew signal bidirectional
+flabel m3 s 378 0 478 2552 0 FreeSans 400 0 0 0 AVSS
+port 7 nsew signal bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 1260 2552
+<< end >>

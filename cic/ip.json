@@ -1,0 +1,15 @@
+{
+	"options" :
+	{
+		"ignoreSetYoffsetHalf" : false,
+		"prefix" : "JNWTR_"
+	},
+	"include" : [
+		"dmos_sky130nm_core.json",
+		"resistors.json",
+		"dig.json",
+		"components.json"
+
+	],
+    "cells" : []
+}

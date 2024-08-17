@@ -1,0 +1,18 @@
+# Byte-compiled / optimized / DLL files
+sim/CHAR_GMID
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+*.net
+*.svg
+*.so
+*.run
+*.pdf
+*.ext
+*.gds
+.cache
+.local/
+output*/
+work/
+build/

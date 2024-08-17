@@ -1,0 +1,75 @@
+magic
+tech sky130A
+magscale 1 1
+timestamp 1723845600
+<< checkpaint >>
+rect 0 0 1260 352
+<< locali >>
+rect 417 117 447 147
+rect 417 205 447 235
+rect 813 205 843 235
+rect 432 293 516 323
+rect 516 293 828 323
+rect 516 293 546 323
+rect 714 29 828 59
+rect 714 205 828 235
+rect 714 29 744 235
+rect 378 205 882 235
+rect 162 161 270 191
+rect 990 249 1098 279
+rect 162 249 270 279
+rect 162 73 270 103
+rect 378 293 486 323
+<< poly >>
+rect 162 167 1098 185
+rect 162 79 1098 97
+<< m3 >>
+rect 774 0 874 352
+rect 378 0 478 352
+rect 774 0 874 352
+rect 378 0 478 352
+use JNWTR_NCHDL MN2 
+transform 1 0 0 0 1 0
+box 0 0 630 176
+use JNWTR_NCHDL MN0 
+transform 1 0 0 0 1 88
+box 0 88 630 264
+use JNWTR_NCHDL MN1 
+transform 1 0 0 0 1 176
+box 0 176 630 352
+use JNWTR_PCHDL MP2 
+transform 1 0 630 0 1 0
+box 630 0 1260 176
+use JNWTR_PCHDL MP0 
+transform 1 0 630 0 1 88
+box 630 88 1260 264
+use JNWTR_PCHDL MP1 
+transform 1 0 630 0 1 176
+box 630 176 1260 352
+use JNWTR_cut_M1M4_2x1 xcut0 
+transform 1 0 774 0 1 117
+box 774 117 874 155
+use JNWTR_cut_M1M4_2x1 xcut1 
+transform 1 0 774 0 1 117
+box 774 117 874 155
+use JNWTR_cut_M1M4_2x1 xcut2 
+transform 1 0 378 0 1 29
+box 378 29 478 67
+<< labels >>
+flabel locali s 162 161 270 191 0 FreeSans 400 0 0 0 A
+port 1 nsew signal bidirectional
+flabel locali s 990 249 1098 279 0 FreeSans 400 0 0 0 CN
+port 3 nsew signal bidirectional
+flabel locali s 162 249 270 279 0 FreeSans 400 0 0 0 C
+port 2 nsew signal bidirectional
+flabel locali s 162 73 270 103 0 FreeSans 400 0 0 0 RN
+port 4 nsew signal bidirectional
+flabel locali s 378 293 486 323 0 FreeSans 400 0 0 0 Y
+port 5 nsew signal bidirectional
+flabel m3 s 774 0 874 352 0 FreeSans 400 0 0 0 AVDD
+port 6 nsew signal bidirectional
+flabel m3 s 378 0 478 352 0 FreeSans 400 0 0 0 AVSS
+port 7 nsew signal bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 1260 352
+<< end >>

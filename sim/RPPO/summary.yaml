@@ -1,0 +1,19 @@
+description: Resistors
+simulations:
+   dc:
+    name: Resistance
+    description: |
+      Check resistance over PVT
+    data:
+      - name: Sch_typ
+        src: results/dc_Sch_typical
+        method: typical
+      - name: Sch_tfs
+        src: results/dc_Sch_tfs
+        method: minmax
+      - name: Sch_temp
+        src: results/dc_Sch_temp
+        method: minmax
+      - name: Sch_3std
+        src: results/dc_Sch_mc
+        method: 3std

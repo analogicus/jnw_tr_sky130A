@@ -1,0 +1,142 @@
+magic
+tech sky130A
+magscale 1 1
+timestamp 1723845600
+<< checkpaint >>
+rect 0 0 1260 792
+<< locali >>
+rect 432 117 516 147
+rect 432 293 516 323
+rect 432 469 516 499
+rect 432 645 516 675
+rect 516 117 828 147
+rect 516 293 828 323
+rect 516 469 828 499
+rect 516 645 828 675
+rect 516 117 546 675
+rect 201 73 231 719
+rect 1029 73 1059 719
+rect 162 73 270 103
+rect 378 117 486 147
+<< poly >>
+rect 162 79 1098 97
+rect 162 167 1098 185
+rect 162 255 1098 273
+rect 162 343 1098 361
+rect 162 431 1098 449
+rect 162 519 1098 537
+rect 162 607 1098 625
+rect 162 695 1098 713
+<< m3 >>
+rect 774 0 874 792
+rect 378 0 478 792
+rect 774 0 874 792
+rect 378 0 478 792
+use JNWTR_NCHDL MN0 
+transform 1 0 0 0 1 0
+box 0 0 630 176
+use JNWTR_NCHDL MN1 
+transform 1 0 0 0 1 88
+box 0 88 630 264
+use JNWTR_NCHDL MN2 
+transform 1 0 0 0 1 176
+box 0 176 630 352
+use JNWTR_NCHDL MN3 
+transform 1 0 0 0 1 264
+box 0 264 630 440
+use JNWTR_NCHDL MN4 
+transform 1 0 0 0 1 352
+box 0 352 630 528
+use JNWTR_NCHDL MN5 
+transform 1 0 0 0 1 440
+box 0 440 630 616
+use JNWTR_NCHDL MN6 
+transform 1 0 0 0 1 528
+box 0 528 630 704
+use JNWTR_NCHDL MN7 
+transform 1 0 0 0 1 616
+box 0 616 630 792
+use JNWTR_PCHDL MP0 
+transform 1 0 630 0 1 0
+box 630 0 1260 176
+use JNWTR_PCHDL MP1 
+transform 1 0 630 0 1 88
+box 630 88 1260 264
+use JNWTR_PCHDL MP2 
+transform 1 0 630 0 1 176
+box 630 176 1260 352
+use JNWTR_PCHDL MP3 
+transform 1 0 630 0 1 264
+box 630 264 1260 440
+use JNWTR_PCHDL MP4 
+transform 1 0 630 0 1 352
+box 630 352 1260 528
+use JNWTR_PCHDL MP5 
+transform 1 0 630 0 1 440
+box 630 440 1260 616
+use JNWTR_PCHDL MP6 
+transform 1 0 630 0 1 528
+box 630 528 1260 704
+use JNWTR_PCHDL MP7 
+transform 1 0 630 0 1 616
+box 630 616 1260 792
+use JNWTR_cut_M1M4_2x1 xcut0 
+transform 1 0 774 0 1 29
+box 774 29 874 67
+use JNWTR_cut_M1M4_2x1 xcut1 
+transform 1 0 774 0 1 205
+box 774 205 874 243
+use JNWTR_cut_M1M4_2x1 xcut2 
+transform 1 0 774 0 1 205
+box 774 205 874 243
+use JNWTR_cut_M1M4_2x1 xcut3 
+transform 1 0 774 0 1 381
+box 774 381 874 419
+use JNWTR_cut_M1M4_2x1 xcut4 
+transform 1 0 774 0 1 381
+box 774 381 874 419
+use JNWTR_cut_M1M4_2x1 xcut5 
+transform 1 0 774 0 1 557
+box 774 557 874 595
+use JNWTR_cut_M1M4_2x1 xcut6 
+transform 1 0 774 0 1 557
+box 774 557 874 595
+use JNWTR_cut_M1M4_2x1 xcut7 
+transform 1 0 774 0 1 733
+box 774 733 874 771
+use JNWTR_cut_M1M4_2x1 xcut8 
+transform 1 0 378 0 1 29
+box 378 29 478 67
+use JNWTR_cut_M1M4_2x1 xcut9 
+transform 1 0 378 0 1 205
+box 378 205 478 243
+use JNWTR_cut_M1M4_2x1 xcut10 
+transform 1 0 378 0 1 205
+box 378 205 478 243
+use JNWTR_cut_M1M4_2x1 xcut11 
+transform 1 0 378 0 1 381
+box 378 381 478 419
+use JNWTR_cut_M1M4_2x1 xcut12 
+transform 1 0 378 0 1 381
+box 378 381 478 419
+use JNWTR_cut_M1M4_2x1 xcut13 
+transform 1 0 378 0 1 557
+box 378 557 478 595
+use JNWTR_cut_M1M4_2x1 xcut14 
+transform 1 0 378 0 1 557
+box 378 557 478 595
+use JNWTR_cut_M1M4_2x1 xcut15 
+transform 1 0 378 0 1 733
+box 378 733 478 771
+<< labels >>
+flabel locali s 162 73 270 103 0 FreeSans 400 0 0 0 A
+port 1 nsew signal bidirectional
+flabel locali s 378 117 486 147 0 FreeSans 400 0 0 0 Y
+port 2 nsew signal bidirectional
+flabel m3 s 774 0 874 792 0 FreeSans 400 0 0 0 AVDD
+port 3 nsew signal bidirectional
+flabel m3 s 378 0 478 792 0 FreeSans 400 0 0 0 AVSS
+port 4 nsew signal bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 1260 792
+<< end >>
