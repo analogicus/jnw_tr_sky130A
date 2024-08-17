@@ -30,6 +30,7 @@ tpdr:
 tpd:
   src: tpd
   name: Delay
+  description: "(tpdf+tpdr)/2"
   typ: 11
   max: 60
   min: 5
