@@ -1,0 +1,88 @@
+magic
+tech sky130A
+magscale 1 1
+timestamp 1723932000
+<< checkpaint >>
+rect 0 0 990 3040
+<< locali >>
+rect 255 375 345 405
+rect 180 465 255 495
+rect 255 375 285 495
+rect 315 345 360 375
+rect 255 2455 345 2485
+rect 180 2545 255 2575
+rect 180 2705 255 2735
+rect 255 2455 285 2735
+rect 315 2425 360 2455
+rect 135 225 225 255
+rect 315 2985 405 3015
+rect 315 2425 405 2455
+rect 135 2065 225 2095
+<< m1 >>
+rect 180 785 255 815
+rect 255 505 360 535
+rect 255 505 285 815
+<< m2 >>
+rect 75 2785 180 2815
+rect 75 225 180 255
+rect 75 225 105 2815
+rect 810 1185 885 1215
+rect 630 2585 885 2615
+rect 885 1185 915 2615
+<< m3 >>
+rect 585 0 673 3040
+rect 315 0 403 3040
+rect 585 0 673 3040
+rect 315 0 403 3040
+use JNWTR_TAPCELLB_CV XA12v 
+transform 1 0 0 0 1 0
+box 0 0 990 160
+use JNWTR_BFX1_CV XA1 
+transform 1 0 0 0 1 160
+box 0 160 990 400
+use JNWTR_IVX1_CV XA2 
+transform 1 0 0 0 1 400
+box 0 400 990 560
+use JNWTR_DFRNQNX1_CV XA4 
+transform 1 0 0 0 1 560
+box 0 560 990 2480
+use JNWTR_IVX1_CV XA3 
+transform 1 0 0 0 1 2480
+box 0 2480 990 2640
+use JNWTR_ANX1_CV XA5 
+transform 1 0 0 0 1 2640
+box 0 2640 990 3040
+use JNWTR_cut_M1M2_2x1 xcut0 
+transform 1 0 135 0 1 785
+box 135 785 223 819
+use JNWTR_cut_M1M2_2x1 xcut1 
+transform 1 0 315 0 1 505
+box 315 505 403 539
+use JNWTR_cut_M1M3_2x1 xcut2 
+transform 1 0 135 0 1 2785
+box 135 2785 223 2819
+use JNWTR_cut_M1M3_2x1 xcut3 
+transform 1 0 135 0 1 225
+box 135 225 223 259
+use JNWTR_cut_M1M3_2x1 xcut4 
+transform 1 0 765 0 1 1185
+box 765 1185 853 1219
+use JNWTR_cut_M1M3_2x1 xcut5 
+transform 1 0 585 0 1 2585
+box 585 2585 673 2619
+<< labels >>
+flabel m3 s 585 0 673 3040 0 FreeSans 400 0 0 0 AVDD
+port 1 nsew signal bidirectional
+flabel m3 s 315 0 403 3040 0 FreeSans 400 0 0 0 AVSS
+port 2 nsew signal bidirectional
+flabel locali s 135 225 225 255 0 FreeSans 400 0 0 0 CKI
+port 3 nsew signal bidirectional
+flabel locali s 315 2985 405 3015 0 FreeSans 400 0 0 0 CKO
+port 4 nsew signal bidirectional
+flabel locali s 315 2425 405 2455 0 FreeSans 400 0 0 0 CKO50DC
+port 5 nsew signal bidirectional
+flabel locali s 135 2065 225 2095 0 FreeSans 400 0 0 0 RN
+port 6 nsew signal bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 990 3040
+<< end >>

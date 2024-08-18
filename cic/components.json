@@ -15,7 +15,6 @@
         "Y" : [ "x",
                 "-"]
     },
-
     "cells":
     [
         { "name": "TGX2_CV" ,
@@ -59,7 +58,7 @@
 
           }
         },
-         { "name" : "CKDIV2",
+         { "name" : "CKDIV2_CV",
           "composite" : 1,
 		  "boundaryIgnoreRouting" : 0,
           "class" : "Layout::LayoutDigitalCell",

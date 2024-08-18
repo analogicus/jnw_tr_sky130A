@@ -358,55 +358,6 @@ JNWTR_PCHDL XB4 (Y,SCO,AVDD,AVDD);
 endmodule
 
 //-------------------------------------------------------------
-// JNWTR_SWX2_CV <class 'cicpy.core.layoutcell.LayoutCell'>
-//-------------------------------------------------------------
-module JNWTR_SWX2_CV(A,Y,VREF,AVDD,AVSS);
-input logic A;
-input logic Y;
-input logic VREF;
-input logic AVSS;
-JNWTR_NCHDL MN0 (Y,A,AVSS,AVSS);
-JNWTR_NCHDL MN1 (AVSS,A,Y,AVSS);
-JNWTR_PCHDL MP0 (Y,A,VREF,AVDD);
-JNWTR_PCHDL MP1 (VREF,A,Y,AVDD);
-endmodule
-
-//-------------------------------------------------------------
-// JNWTR_SWX4_CV <class 'cicpy.core.layoutcell.LayoutCell'>
-//-------------------------------------------------------------
-module JNWTR_SWX4_CV(A,Y,VREF,AVDD,AVSS);
-input logic A;
-input logic Y;
-input logic VREF;
-input logic AVSS;
-JNWTR_NCHDL MN0 (Y,A,AVSS,AVSS);
-JNWTR_NCHDL MN1 (AVSS,A,Y,AVSS);
-JNWTR_NCHDL MN2 (Y,A,AVSS,AVSS);
-JNWTR_NCHDL MN3 (AVSS,A,Y,AVSS);
-JNWTR_PCHDL MP0 (Y,A,VREF,AVDD);
-JNWTR_PCHDL MP1 (VREF,A,Y,AVDD);
-JNWTR_PCHDL MP2 (Y,A,VREF,AVDD);
-JNWTR_PCHDL MP3 (VREF,A,Y,AVDD);
-endmodule
-
-//-------------------------------------------------------------
-// JNWTR_TGPD_CV <class 'cicpy.core.layoutcell.LayoutCell'>
-//-------------------------------------------------------------
-module JNWTR_TGPD_CV(C,A,B,AVDD,AVSS);
-input logic C;
-input logic B;
-input logic A;
-input logic AVDD;
-input logic AVSS;
-JNWTR_NCHDL MN0 (AVSS,C,CN,AVSS);
-JNWTR_NCHDL MN1 (B,C,AVSS,AVSS);
-JNWTR_NCHDL MN2 (A,CN,B,AVSS);
-JNWTR_PCHDL MP0 (AVDD,C,CN,AVDD);
-JNWTR_PCHDL MP1_DMY (B,AVDD,AVDD,AVDD);
-JNWTR_PCHDL MP2 (A,C,B,AVDD);
-endmodule
-
-//-------------------------------------------------------------
 // JNWTR_TGX2_CV <class 'cicpy.core.layoutcell.LayoutCell'>
 //-------------------------------------------------------------
 module JNWTR_TGX2_CV(A,C,B,AVDD,AVSS);
@@ -440,9 +391,9 @@ JNWTR_IVTRIX1_CV XA0 (QN,C,CN,Y,AVDD,AVSS);
 endmodule
 
 //-------------------------------------------------------------
-// JNWTR_CKDIV2 <class 'cicpy.core.layoutcell.LayoutCell'>
+// JNWTR_CKDIV2_CV <class 'cicpy.core.layoutcell.LayoutCell'>
 //-------------------------------------------------------------
-module JNWTR_CKDIV2(AVDD,AVSS,CKI,CKO,CKO50DC,RN);
+module JNWTR_CKDIV2_CV(AVDD,AVSS,CKI,CKO,CKO50DC,RN);
 input logic AVDD;
 input logic AVSS;
 input logic CKI;
@@ -480,10 +431,6 @@ JNWTR_ORX1_CV XD10 (A10,B10,Y10,AVDD,AVSS);
 JNWTR_ANX1_CV XD11 (A11,B11,Y11,AVDD,AVSS);
 JNWTR_TAPCELLB_CV XE0 (AVDD,AVSS);
 JNWTR_SCX1_CV XE12 (A12,Y12,AVDD,AVSS);
-JNWTR_TAPCELLB_CV XF0 (AVDD,AVSS);
-JNWTR_SWX2_CV XF13 (A13,Y13,V13,AVDD,AVSS);
-JNWTR_SWX4_CV XF14 (A14,Y14,V14,AVDD,AVSS);
-JNWTR_TGPD_CV XF15 (A15,Y15,V15,AVDD,AVSS);
 JNWTR_TAPCELLB_CV XG0 (AVDD,AVSS);
 JNWTR_TGX2_CV XG1 (A16,C16,B16,AVDD,AVSS);
 JNWTR_RPPO2 XH1 (P17,N17,AVSS);
@@ -491,10 +438,11 @@ JNWTR_RPPO4 XI1 (P18,N18,AVSS);
 JNWTR_RPPO8 XJ1 (P19,N19,AVSS);
 JNWTR_RPPO16 XK1 (P20,N20,AVSS);
 JNWTR_TAPCELLB_CV XL0 (AVDD,AVSS);
-JNWTR_CKDIV2 XL1 (AVDD,AVSS,CKI21,CKO21,CKO50DC21,RN21);
+JNWTR_CKDIV2_CV XL1 (AVDD,AVSS,CKI21,CKO21,CKO50DC21,RN21);
 JNWTR_TAPCELLB_CV XM0 (AVDD,AVSS);
 JNWTR_DFTRIX1_CV XM1 (D22,CK22,C22,CN22,Y22,AVDD,AVSS);
 JNWTR_DFTSPCX1_CV XM2 (D23,CK23,Q23,AVDD,AVSS);
 JNWTR_TAPCELLB_CV XN0 (AVDD,AVSS);
 JNWTR_SCX1_CV XN1 (A24,Y24,AVDD,AVSS);
+JNWTR_DFRNQNX1_CV XN2 (D25,CK25,RN25,Q25,QN25,AVDD,AVSS);
 endmodule

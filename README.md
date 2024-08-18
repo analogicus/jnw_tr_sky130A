@@ -5,12 +5,18 @@
 Carsten Wulff carsten@wulff.no
 
 # Why
-Library with digital cells, and standard transistors
+Core voltage library with digital cells, resistors, capacitors and standard
+transistors.
+
+The library is not for synthesis, but for the stray logic we sometimes need to
+have in analog schematics. 
+
+If you find yourself using lots of digital cells from this library, then
+consider learning verilog and openlane. It will be smaller.
 
 # How
  Made with [ciccreator](https://github.com/wulffern/ciccreator). Source files in
- `cic/`
- 
+ [cic/](cic/)
 
 # What
 
@@ -21,8 +27,6 @@ Library with digital cells, and standard transistors
 | Verilog   | [design/JNW_TR_SKY130A.v](design/JNW_TR_SKY130A.v)                         | Not tested |
 
 
-
-
 # Changelog/Plan
 | Version | Status | Comment                        |
 |:--------|:-------|:-------------------------------|
@@ -30,45 +34,46 @@ Library with digital cells, and standard transistors
 
 
 # Transistors
-| Cell        | Description |
-|:------------|:------------|
-| JNWTR_NCHDL | Unit NMOS   |
-| JNWTR_PCHDL | Unit PMOS   |
+| Cell                               | Description |
+|:-----------------------------------|:------------|
+| [NCHDL](sim/JNWTR_NCHDL/README.md) | Unit NMOS   |
+| [PCHDL](sim/JNWTR_PCHDL/README.md) | Unit PMOS   |
 
 
-| Name   |   gmid10_vgs |   gmid10_id |
-|:-------|-------------:|------------:|
-| NCHDL  |      806.916 |     22.8402 |
-| PCHDL  |     -841.475 |     5.22893 |
+# Resistors
+| Cell  | Description                    |
+|:------|:-------------------------------|
+| RPPO2 | 2 series hi-res poly resistors |
+| RPPO4 | 4 series hi-res poly resistors |
+| RPPO8 | 8 series hi-res poly resistors |
+| RPPO16 | 16 series hi-res poly resistors |
 
-
+[resistor details](sim/RPPO/README.md)
  
 # Digital cells
 
-| Cell              | Description                                         |
-|:------------------|:----------------------------------------------------|
-| JNWTR_ANX1_CV     | AND                                                 |
-| JNWTR_BFX1_CV     | Buffer                                              |
-| JNWTR_DFRNQNX1_CV | D Flip-flop with inverted output and inverted reset |
-| JNWTR_IVTRIX1_CV  | Tristate inverter, enable                           |
-| JNWTR_IVX1_CV     | Inverter                                            |
-| JNWTR_NDTRIX1_CV  | Tristate NAND                                       |
-| JNWTR_NDX1_CV     | NAND                                                |
-| JNWTR_NRX1_CV     | NOR                                                 |
-| JNWTR_ORX1_CV     | OR                                                  |
-| JNWTR_SCX1_CV     | Schmitt-trigger                                     |
-| JNWTR_TAPCELLB_CV | Bulk connection                                     |
-| JNWTR_TIEH_CV     | Tie high                                            |
-| JNWTR_TIEL_CV     | Tie low                                             |
-
-
+| Cell                             | Description                                         |
+|:---------------------------------|:----------------------------------------------------|
+| TAPCELLB_CV                      | Bulk connection                                     |
+| TIEH_CV                          | Tie high                                            |
+| TIEL_CV                          | Tie low                                             |
+| [IVX1_CV](sim/IVX1_CV/README.md) | Inverter                                            |
+| BFX1_CV                          | Buffer                                              |
+| NDX1_CV                          | NAND                                                |
+| NRX1_CV                          | NOR                                                 |
+| ANX1_CV                          | AND                                                 |
+| ORX1_CV                          | OR                                                  |
+| TGX2_CV                          | Transmission gate                                   |
+| SCX1_CV                          | Schmitt-trigger                                     |
+| DFRNQNX1_CV                      | D Flip-flop with inverted output and inverted reset |
+| CKDIV2_CV                        | 1/2 clock pulse divider                             |
 
 
 # Key parameters
-| Parameter           | Min     | Typ           | Max     | Unit  |
-| :---                | :-:     | :-:           | :-:     | :---: |
-| Technology          |         | SKY130A  |         |       |
-| AVDD                | 1.7    | 1.8           | 1.9    | V     |
-| Temperature         | -40     | 27            | 125     | C     |
+| Parameter   | Min | Typ     | Max | Unit |
+|:------------|:---:|:-------:|:---:|:----:|
+| Technology  |     | SKY130A |     |      |
+| AVDD        | 1.7 | 1.8     | 1.9 | V    |
+| Temperature | -40 | 27      | 125 | C    |
 
 
