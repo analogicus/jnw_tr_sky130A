@@ -307,6 +307,9 @@
           "rows" : 5,
           "class" : "Layout::LayoutDigitalCell",
           "boundaryIgnoreRouting" : 0,
+           "meta" : {
+              "symbol" : "cic/sc"
+          },
           "beforeRoute" : {
               "addDirectedRoutes" :[
                   ["M1","NC","XA4b:D-|--XB4:S"],

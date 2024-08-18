@@ -1,0 +1,26 @@
+magic
+tech sky130A
+magscale 1 1
+timestamp 1723932000
+<< checkpaint >>
+rect 0 0 540 540
+<< m3 >>
+rect 0 0 540 50
+rect 0 0 540 50
+rect 0 0 540 540
+<< m4 >>
+rect 0 0 540 50
+rect 0 0 540 50
+rect 0 0 540 540
+<< mimcap >>
+rect 20 20 520 520
+<< mimcapcontact >>
+rect 30 30 510 510
+<< labels >>
+flabel m3 s 0 0 540 50 0 FreeSans 400 0 0 0 A
+port 1 nsew signal bidirectional
+flabel m4 s 0 0 540 50 0 FreeSans 400 0 0 0 B
+port 2 nsew signal bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 540 540
+<< end >>

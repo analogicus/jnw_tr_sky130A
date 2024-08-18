@@ -4,10 +4,10 @@ K {}
 V {}
 S {}
 E {}
-C {devices/iopin.sym} 0 0 0 0 {name=p0 lab=A}
-C {devices/iopin.sym} 0 20 0 0 {name=p1 lab=Y}
-C {devices/iopin.sym} 0 40 0 0 {name=p2 lab=AVDD}
-C {devices/iopin.sym} 0 60 0 0 {name=p3 lab=AVSS}
+C {devices/ipin.sym} 0 0 0 0 {name=p0 lab=A}
+C {devices/opin.sym} 0 20 0 0 {name=p1 lab=Y}
+C {devices/ipin.sym} 0 40 0 0 {name=p2 lab=AVDD}
+C {devices/ipin.sym} 0 60 0 0 {name=p3 lab=AVSS}
 C {JNW_TR_SKY130A/JNWTR_NCHDL.sym} 400 0 0 0 {name=XXA2}
 N 460.0 -30.0 440.0 -30.0 {lab=N1}
 C {devices/lab_pin.sym} 460.0 -30.0 2 0 {name=l0 sig_type=std_logic lab=N1 }

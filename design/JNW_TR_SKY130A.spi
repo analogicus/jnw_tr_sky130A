@@ -3,68 +3,42 @@
 * JNWTR_PCHDL <class 'cicpy.core.layoutcell.LayoutCell'>
 *-------------------------------------------------------------
 .SUBCKT JNWTR_PCHDL D G S B
-XMM1 D G S B sky130_fd_pr__pfet_01v8  l=0.16  nf=1  w=0.9  
+M1 D G S B sky130_fd_pr__pfet_01v8  l=0.16  nf=1  w=0.9  
 .ENDS
 
 *-------------------------------------------------------------
 * JNWTR_NCHDL <class 'cicpy.core.layoutcell.LayoutCell'>
 *-------------------------------------------------------------
 .SUBCKT JNWTR_NCHDL D G S B
-XMM1 D G S B sky130_fd_pr__nfet_01v8  l=0.16  nf=1  w=0.9  
+M1 D G S B sky130_fd_pr__nfet_01v8  l=0.16  nf=1  w=0.9  
 .ENDS
 
 *-------------------------------------------------------------
 * JNWTR_RES2 <class 'cicpy.core.layoutcell.LayoutCell'>
 *-------------------------------------------------------------
 .SUBCKT JNWTR_RES2 N P B
-XRR1_0 N INT_0 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_1 INT_0 P B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
+R1 N P B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
 .ENDS
 
 *-------------------------------------------------------------
 * JNWTR_RES4 <class 'cicpy.core.layoutcell.LayoutCell'>
 *-------------------------------------------------------------
 .SUBCKT JNWTR_RES4 N P B
-XRR1_0 N INT_0 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_1 INT_0 INT_1 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_2 INT_1 INT_2 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_3 INT_2 P B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
+R1 N P B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
 .ENDS
 
 *-------------------------------------------------------------
 * JNWTR_RES8 <class 'cicpy.core.layoutcell.LayoutCell'>
 *-------------------------------------------------------------
 .SUBCKT JNWTR_RES8 N P B
-XRR1_0 N INT_0 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_1 INT_0 INT_1 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_2 INT_1 INT_2 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_3 INT_2 INT_3 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_4 INT_3 INT_4 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_5 INT_4 INT_5 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_6 INT_5 INT_6 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_7 INT_6 P B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
+R1 N P B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
 .ENDS
 
 *-------------------------------------------------------------
 * JNWTR_RES16 <class 'cicpy.core.layoutcell.LayoutCell'>
 *-------------------------------------------------------------
 .SUBCKT JNWTR_RES16 N P B
-XRR1_0 N INT_0 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_1 INT_0 INT_1 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_2 INT_1 INT_2 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_3 INT_2 INT_3 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_4 INT_3 INT_4 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_5 INT_4 INT_5 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_6 INT_5 INT_6 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_7 INT_6 INT_7 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_8 INT_7 INT_8 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_9 INT_8 INT_9 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_10 INT_9 INT_10 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_11 INT_10 INT_11 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_12 INT_11 INT_12 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_13 INT_12 INT_13 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_14 INT_13 INT_14 B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
-XRR1_15 INT_14 P B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
+R1 N P B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
 .ENDS
 
 *-------------------------------------------------------------
@@ -285,6 +259,23 @@ XB4 Y SCO AVDD AVDD JNWTR_PCHDL
 .ENDS
 
 *-------------------------------------------------------------
+* JNWTR_CAPX1 <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_CAPX1 A B
+C1 B A sky130_fd_pr__cap_mim_m3_1  
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_CAPX4 <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_CAPX4 A B
+XA1 A B JNWTR_CAPX1
+XA2 A B JNWTR_CAPX1
+XB1 A B JNWTR_CAPX1
+XB2 A B JNWTR_CAPX1
+.ENDS
+
+*-------------------------------------------------------------
 * JNWTR_TGX2_CV <class 'cicpy.core.layoutcell.LayoutCell'>
 *-------------------------------------------------------------
 .SUBCKT JNWTR_TGX2_CV A C B AVDD AVSS
@@ -350,6 +341,7 @@ XM0 AVDD AVSS JNWTR_TAPCELLB_CV
 XM1 D22 CK22 C22 CN22 Y22 AVDD AVSS JNWTR_DFTRIX1_CV
 XM2 D23 CK23 Q23 AVDD AVSS JNWTR_DFTSPCX1_CV
 XN0 AVDD AVSS JNWTR_TAPCELLB_CV
-XN1 A24 Y24 AVDD AVSS JNWTR_SCX1_CV
 XN2 D25 CK25 RN25 Q25 QN25 AVDD AVSS JNWTR_DFRNQNX1_CV
+XO1 A26 B26 JNWTR_CAPX4
+XO0 A27 B27 JNWTR_CAPX1
 .ENDS

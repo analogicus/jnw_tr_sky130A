@@ -19,6 +19,9 @@
     [
         { "name": "TGX2_CV" ,
           "class" : "Layout::LayoutDigitalCell",
+          "meta" : {
+              "symbol" : "cic/tg"
+          },
           "beforeRoute" : {
               "addDirectedRoutes" : [ ["M1","CN","MN0:S-|--MP0:S"],
                                       ["PO","C","MN0:G-MP0:G"],

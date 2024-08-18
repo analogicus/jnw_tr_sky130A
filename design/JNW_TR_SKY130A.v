@@ -358,6 +358,26 @@ JNWTR_PCHDL XB4 (Y,SCO,AVDD,AVDD);
 endmodule
 
 //-------------------------------------------------------------
+// JNWTR_CAPX1 <class 'cicpy.core.layoutcell.LayoutCell'>
+//-------------------------------------------------------------
+module JNWTR_CAPX1(A,B);
+input logic A;
+input logic B;
+endmodule
+
+//-------------------------------------------------------------
+// JNWTR_CAPX4 <class 'cicpy.core.layoutcell.LayoutCell'>
+//-------------------------------------------------------------
+module JNWTR_CAPX4(A,B);
+input logic A;
+input logic B;
+JNWTR_CAPX1 XA1 (A,B);
+JNWTR_CAPX1 XA2 (A,B);
+JNWTR_CAPX1 XB1 (A,B);
+JNWTR_CAPX1 XB2 (A,B);
+endmodule
+
+//-------------------------------------------------------------
 // JNWTR_TGX2_CV <class 'cicpy.core.layoutcell.LayoutCell'>
 //-------------------------------------------------------------
 module JNWTR_TGX2_CV(A,C,B,AVDD,AVSS);
@@ -443,6 +463,7 @@ JNWTR_TAPCELLB_CV XM0 (AVDD,AVSS);
 JNWTR_DFTRIX1_CV XM1 (D22,CK22,C22,CN22,Y22,AVDD,AVSS);
 JNWTR_DFTSPCX1_CV XM2 (D23,CK23,Q23,AVDD,AVSS);
 JNWTR_TAPCELLB_CV XN0 (AVDD,AVSS);
-JNWTR_SCX1_CV XN1 (A24,Y24,AVDD,AVSS);
 JNWTR_DFRNQNX1_CV XN2 (D25,CK25,RN25,Q25,QN25,AVDD,AVSS);
+JNWTR_CAPX4 XO1 (A26,B26);
+JNWTR_CAPX1 XO0 (A27,B27);
 endmodule

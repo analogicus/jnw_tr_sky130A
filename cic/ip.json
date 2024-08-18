@@ -4,13 +4,15 @@
 		"ignoreSetYoffsetHalf" : false,
 		"prefix" : "JNWTR_",
 		"topcells" : [
-            "TOP"
+            "TOP",
+			"CAPX1"
         ]
 	},
 	"include" : [
 		"dmos_sky130nm_core.json",
 		"resistors.json",
 		"dig.json",
+		"capacitor.json",
 		"components.json"
 
 	],
