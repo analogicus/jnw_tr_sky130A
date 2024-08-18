@@ -2,7 +2,10 @@
 	"options" :
 	{
 		"ignoreSetYoffsetHalf" : false,
-		"prefix" : "JNWTR_"
+		"prefix" : "JNWTR_",
+		"topcells" : [
+            "TOP"
+        ]
 	},
 	"include" : [
 		"dmos_sky130nm_core.json",

@@ -1,71 +1,71 @@
 magic
 tech sky130A
 magscale 1 1
-timestamp 1723845600
+timestamp 1723932000
 << checkpaint >>
-rect 0 0 630 176
+rect 0 0 495 160
 << ndiff >>
-rect 378 22 486 66
-rect 378 66 486 110
-rect 378 110 486 154
+rect 315 20 405 60
+rect 315 60 405 100
+rect 315 100 405 140
 << ptap >>
-rect -54 -22 54 22
-rect -54 22 54 66
-rect -54 66 54 110
-rect -54 110 54 154
-rect -54 154 54 198
+rect -45 -20 45 20
+rect -45 20 45 60
+rect -45 60 45 100
+rect -45 100 45 140
+rect -45 140 45 180
 << poly >>
-rect 162 -9 522 9
-rect 162 79 522 97
-rect 162 167 522 185
-rect 162 66 270 110
+rect 135 -8 435 8
+rect 135 72 435 88
+rect 135 152 435 168
+rect 135 60 225 100
 << locali >>
-rect 162 73 270 103
-rect -54 -22 54 22
-rect -54 22 54 66
-rect 378 29 486 59
-rect 378 29 486 59
-rect -54 66 54 110
-rect -54 66 54 110
-rect 162 73 270 103
-rect -54 110 54 154
-rect 378 117 486 147
-rect 378 117 486 147
-rect -54 154 54 198
+rect 135 65 225 95
+rect -45 -20 45 20
+rect -45 20 45 60
+rect 315 25 405 55
+rect 315 25 405 55
+rect -45 60 45 100
+rect -45 60 45 100
+rect 135 65 225 95
+rect -45 100 45 140
+rect 315 105 405 135
+rect 315 105 405 135
+rect -45 140 45 180
 << pcontact >>
-rect 174 77 198 88
-rect 174 88 198 99
-rect 198 77 234 88
-rect 198 88 234 99
-rect 234 77 258 88
-rect 234 88 258 99
+rect 150 70 165 80
+rect 150 80 165 90
+rect 165 70 195 80
+rect 165 80 195 90
+rect 195 70 210 80
+rect 195 80 210 90
 << ptapc >>
-rect -18 22 18 66
-rect -18 110 18 154
+rect -15 20 15 60
+rect -15 100 15 140
 << ndcontact >>
-rect 390 33 414 44
-rect 390 44 414 55
-rect 414 33 450 44
-rect 414 44 450 55
-rect 450 33 474 44
-rect 450 44 474 55
-rect 390 121 414 132
-rect 390 132 414 143
-rect 414 121 450 132
-rect 414 132 450 143
-rect 450 121 474 132
-rect 450 132 474 143
+rect 330 30 345 40
+rect 330 40 345 50
+rect 345 30 375 40
+rect 345 40 375 50
+rect 375 30 390 40
+rect 375 40 390 50
+rect 330 110 345 120
+rect 330 120 345 130
+rect 345 110 375 120
+rect 345 120 375 130
+rect 375 110 390 120
+rect 375 120 390 130
 << pwell >>
-rect -90 -66 630 242
+rect -75 -60 495 220
 << labels >>
-flabel locali s 162 73 270 103 0 FreeSans 400 0 0 0 G
+flabel locali s 135 65 225 95 0 FreeSans 400 0 0 0 G
 port 2 nsew signal bidirectional
-flabel locali s 378 29 486 59 0 FreeSans 400 0 0 0 S
+flabel locali s 315 25 405 55 0 FreeSans 400 0 0 0 S
 port 3 nsew signal bidirectional
-flabel locali s -54 66 54 110 0 FreeSans 400 0 0 0 B
+flabel locali s -45 60 45 100 0 FreeSans 400 0 0 0 B
 port 4 nsew signal bidirectional
-flabel locali s 378 117 486 147 0 FreeSans 400 0 0 0 D
+flabel locali s 315 105 405 135 0 FreeSans 400 0 0 0 D
 port 1 nsew signal bidirectional
 << properties >>
-string FIXED_BBOX 0 0 630 176
+string FIXED_BBOX 0 0 495 160
 << end >>

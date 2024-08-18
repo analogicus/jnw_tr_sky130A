@@ -1,58 +1,58 @@
 magic
 tech sky130A
 magscale 1 1
-timestamp 1723845600
+timestamp 1723932000
 << checkpaint >>
-rect 0 0 1260 264
+rect 0 0 990 240
 << locali >>
-rect 432 117 516 147
-rect 516 117 828 147
-rect 516 117 546 147
-rect 201 73 231 191
-rect 1029 73 1059 191
-rect 162 73 270 103
-rect 378 117 486 147
+rect 360 105 435 135
+rect 435 105 630 135
+rect 435 105 465 135
+rect 165 65 195 175
+rect 795 65 825 175
+rect 135 65 225 95
+rect 315 105 405 135
 << poly >>
-rect 162 79 1098 97
-rect 162 167 1098 185
+rect 135 72 855 88
+rect 135 152 855 168
 << m3 >>
-rect 774 0 874 264
-rect 378 0 478 264
-rect 774 0 874 264
-rect 378 0 478 264
+rect 585 0 673 240
+rect 315 0 403 240
+rect 585 0 673 240
+rect 315 0 403 240
 use JNWTR_NCHDL MN0 
 transform 1 0 0 0 1 0
-box 0 0 630 176
+box 0 0 495 160
 use JNWTR_NCHDL MN1 
-transform 1 0 0 0 1 88
-box 0 88 630 264
+transform 1 0 0 0 1 80
+box 0 80 495 240
 use JNWTR_PCHDL MP0 
-transform 1 0 630 0 1 0
-box 630 0 1260 176
+transform 1 0 495 0 1 0
+box 495 0 990 160
 use JNWTR_PCHDL MP1 
-transform 1 0 630 0 1 88
-box 630 88 1260 264
+transform 1 0 495 0 1 80
+box 495 80 990 240
 use JNWTR_cut_M1M4_2x1 xcut0 
-transform 1 0 774 0 1 29
-box 774 29 874 67
+transform 1 0 585 0 1 25
+box 585 25 673 59
 use JNWTR_cut_M1M4_2x1 xcut1 
-transform 1 0 774 0 1 205
-box 774 205 874 243
+transform 1 0 585 0 1 185
+box 585 185 673 219
 use JNWTR_cut_M1M4_2x1 xcut2 
-transform 1 0 378 0 1 29
-box 378 29 478 67
+transform 1 0 315 0 1 25
+box 315 25 403 59
 use JNWTR_cut_M1M4_2x1 xcut3 
-transform 1 0 378 0 1 205
-box 378 205 478 243
+transform 1 0 315 0 1 185
+box 315 185 403 219
 << labels >>
-flabel locali s 162 73 270 103 0 FreeSans 400 0 0 0 A
+flabel locali s 135 65 225 95 0 FreeSans 400 0 0 0 A
 port 1 nsew signal bidirectional
-flabel locali s 378 117 486 147 0 FreeSans 400 0 0 0 Y
+flabel locali s 315 105 405 135 0 FreeSans 400 0 0 0 Y
 port 2 nsew signal bidirectional
-flabel m3 s 774 0 874 264 0 FreeSans 400 0 0 0 AVDD
+flabel m3 s 585 0 673 240 0 FreeSans 400 0 0 0 AVDD
 port 3 nsew signal bidirectional
-flabel m3 s 378 0 478 264 0 FreeSans 400 0 0 0 AVSS
+flabel m3 s 315 0 403 240 0 FreeSans 400 0 0 0 AVSS
 port 4 nsew signal bidirectional
 << properties >>
-string FIXED_BBOX 0 0 1260 264
+string FIXED_BBOX 0 0 990 240
 << end >>

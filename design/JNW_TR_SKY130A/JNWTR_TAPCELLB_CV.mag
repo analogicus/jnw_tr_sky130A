@@ -1,52 +1,52 @@
 magic
 tech sky130A
 magscale 1 1
-timestamp 1723845600
+timestamp 1723932000
 << checkpaint >>
-rect 0 0 1260 176
+rect 0 0 990 160
 << locali >>
-rect -54 73 270 103
-rect 216 73 300 103
-rect 300 29 432 59
-rect 300 29 330 103
-rect 216 73 300 103
-rect 300 117 432 147
-rect 300 73 330 147
-rect 828 29 912 59
-rect 912 73 1044 103
-rect 912 29 942 103
-rect 828 117 912 147
-rect 912 73 1044 103
-rect 912 73 942 147
-rect 990 73 1314 103
+rect -45 65 225 95
+rect 180 65 255 95
+rect 255 25 360 55
+rect 255 25 285 95
+rect 180 65 255 95
+rect 255 105 360 135
+rect 255 65 285 135
+rect 630 25 705 55
+rect 705 65 810 95
+rect 705 25 735 95
+rect 630 105 705 135
+rect 705 65 810 95
+rect 705 65 735 135
+rect 765 65 1035 95
 << m3 >>
-rect 774 0 874 176
-rect 378 0 478 176
-rect 774 0 874 176
-rect 378 0 478 176
+rect 585 0 673 160
+rect 315 0 403 160
+rect 585 0 673 160
+rect 315 0 403 160
 use JNWTR_NCHDL MN1 
 transform 1 0 0 0 1 0
-box 0 0 630 176
+box 0 0 495 160
 use JNWTR_PCHDL MP1 
-transform 1 0 630 0 1 0
-box 630 0 1260 176
+transform 1 0 495 0 1 0
+box 495 0 990 160
 use JNWTR_cut_M1M4_2x1 xcut0 
-transform 1 0 774 0 1 117
-box 774 117 874 155
+transform 1 0 585 0 1 105
+box 585 105 673 139
 use JNWTR_cut_M1M4_2x1 xcut1 
-transform 1 0 774 0 1 29
-box 774 29 874 67
+transform 1 0 585 0 1 25
+box 585 25 673 59
 use JNWTR_cut_M1M4_2x1 xcut2 
-transform 1 0 378 0 1 117
-box 378 117 478 155
+transform 1 0 315 0 1 105
+box 315 105 403 139
 use JNWTR_cut_M1M4_2x1 xcut3 
-transform 1 0 378 0 1 29
-box 378 29 478 67
+transform 1 0 315 0 1 25
+box 315 25 403 59
 << labels >>
-flabel m3 s 774 0 874 176 0 FreeSans 400 0 0 0 AVDD
+flabel m3 s 585 0 673 160 0 FreeSans 400 0 0 0 AVDD
 port 1 nsew signal bidirectional
-flabel m3 s 378 0 478 176 0 FreeSans 400 0 0 0 AVSS
+flabel m3 s 315 0 403 160 0 FreeSans 400 0 0 0 AVSS
 port 2 nsew signal bidirectional
 << properties >>
-string FIXED_BBOX 0 0 1260 176
+string FIXED_BBOX 0 0 990 160
 << end >>

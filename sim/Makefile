@@ -10,7 +10,10 @@ PREFIX=JNWTR_
 CELLS= NCHDL PCHDL
 
 all:
+	cd IVX1_CV; make all
+	cd RPPO; make all
 	${foreach c, ${CELLS}, ${MAKE} run NAME=${c};}
+
 
 test:
 	${MAKE} run CORNER="typical" NAME=NCHDL

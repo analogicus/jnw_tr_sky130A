@@ -1,287 +1,364 @@
 magic
 tech sky130A
 magscale 1 1
-timestamp 1723845600
+timestamp 1723932000
 << checkpaint >>
-rect -720 -720 20212 2838
+rect -600 -600 16552 3800
 << locali >>
-rect 19752 -360 19852 2478
-rect -360 -360 19852 -260
-rect -360 2378 19852 2478
-rect -360 -360 -260 2478
-rect 19752 -360 19852 2478
-rect 8972 -360 10292 64
-rect 10452 -360 12204 64
-rect 12364 -360 14980 64
-rect 15140 -360 19484 64
-rect 20112 -720 20212 2838
-rect -720 -720 20212 -620
-rect -720 2738 20212 2838
-rect -720 -720 -620 2838
-rect 20112 -720 20212 2838
+rect 16164 -300 16252 3500
+rect -300 -300 16252 -212
+rect -300 3412 16252 3500
+rect -300 -300 -212 3500
+rect 16164 -300 16252 3500
+rect 7058 -300 7766 64
+rect 7902 -300 8826 64
+rect 8962 -300 10318 64
+rect 10454 -300 12674 64
+rect 16464 -600 16552 3800
+rect -600 -600 16552 -512
+rect -600 3712 16552 3800
+rect -600 -600 -512 3800
+rect 16464 -600 16552 3800
 << m3 >>
-rect 378 -360 478 176
-rect 378 -360 478 352
-rect 378 -360 478 528
-rect 2042 -360 2142 176
-rect 2042 -360 2142 352
-rect 2042 -360 2142 616
-rect 2042 -360 2142 1056
-rect 2042 -360 2142 1848
-rect 2898 -360 2998 176
-rect 2898 -360 2998 440
-rect 4562 -360 4662 176
-rect 4562 -360 4662 440
-rect 4562 -360 4662 704
-rect 4562 -360 4662 1144
-rect 4562 -360 4662 1584
-rect 5418 -360 5518 176
-rect 5418 -360 5518 1056
-rect 7082 -360 7182 176
-rect 7082 -360 7182 440
-rect 7082 -360 7182 880
-rect 7082 -360 7182 1232
-rect 7938 -360 8038 176
-rect 7938 -360 8038 704
-rect 774 -720 874 176
-rect 774 -720 874 352
-rect 774 -720 874 528
-rect 1646 -720 1746 176
-rect 1646 -720 1746 352
-rect 1646 -720 1746 616
-rect 1646 -720 1746 1056
-rect 1646 -720 1746 1848
-rect 3294 -720 3394 176
-rect 3294 -720 3394 440
-rect 4166 -720 4266 176
-rect 4166 -720 4266 440
-rect 4166 -720 4266 704
-rect 4166 -720 4266 1144
-rect 4166 -720 4266 1584
-rect 5814 -720 5914 176
-rect 5814 -720 5914 1056
-rect 6686 -720 6786 176
-rect 6686 -720 6786 1232
-rect 8334 -720 8434 176
-rect 8334 -720 8434 704
+rect 315 -300 403 160
+rect 315 -300 403 320
+rect 315 -300 403 480
+rect 1577 -300 1665 160
+rect 1577 -300 1665 320
+rect 1577 -300 1665 560
+rect 1577 -300 1665 960
+rect 1577 -300 1665 1680
+rect 2295 -300 2383 160
+rect 2295 -300 2383 400
+rect 3557 -300 3645 160
+rect 3557 -300 3645 400
+rect 3557 -300 3645 640
+rect 3557 -300 3645 1040
+rect 3557 -300 3645 1440
+rect 4275 -300 4363 160
+rect 4275 -300 4363 960
+rect 5537 -300 5625 160
+rect 5537 -300 5625 400
+rect 5537 -300 5625 800
+rect 5537 -300 5625 1120
+rect 6255 -300 6343 160
+rect 6255 -300 6343 640
+rect 13569 -300 13657 160
+rect 13569 -300 13657 3200
+rect 14287 -300 14375 160
+rect 14287 -300 14375 2480
+rect 14287 -300 14375 2960
+rect 15549 -300 15637 160
+rect 15549 -300 15637 960
+rect 585 -600 673 160
+rect 585 -600 673 320
+rect 585 -600 673 480
+rect 1307 -600 1395 160
+rect 1307 -600 1395 320
+rect 1307 -600 1395 560
+rect 1307 -600 1395 960
+rect 1307 -600 1395 1680
+rect 2565 -600 2653 160
+rect 2565 -600 2653 400
+rect 3287 -600 3375 160
+rect 3287 -600 3375 400
+rect 3287 -600 3375 640
+rect 3287 -600 3375 1040
+rect 3287 -600 3375 1440
+rect 4545 -600 4633 160
+rect 4545 -600 4633 960
+rect 5267 -600 5355 160
+rect 5267 -600 5355 1120
+rect 6525 -600 6613 160
+rect 6525 -600 6613 640
+rect 13299 -600 13387 160
+rect 13299 -600 13387 3200
+rect 14557 -600 14645 160
+rect 14557 -600 14645 2480
+rect 14557 -600 14645 2960
+rect 15279 -600 15367 160
+rect 15279 -600 15367 960
 use JNWTR_TAPCELLB_CV XA0 
 transform 1 0 0 0 1 0
-box 0 0 1260 176
+box 0 0 990 160
 use JNWTR_TIEH_CV XA1 
-transform 1 0 0 0 1 176
-box 0 176 1260 352
+transform 1 0 0 0 1 160
+box 0 160 990 320
 use JNWTR_TIEL_CV XA2 
-transform 1 0 0 0 1 352
-box 0 352 1260 528
+transform 1 0 0 0 1 320
+box 0 320 990 480
 use JNWTR_TAPCELLB_CV XB0 
-transform -1 0 2520 0 1 0
-box 2520 0 3780 176
+transform -1 0 1980 0 1 0
+box 1980 0 2970 160
 use JNWTR_IVX1_CV XB3 
-transform -1 0 2520 0 1 176
-box 2520 176 3780 352
+transform -1 0 1980 0 1 160
+box 1980 160 2970 320
 use JNWTR_IVX2_CV XB4 
-transform -1 0 2520 0 1 352
-box 2520 352 3780 616
+transform -1 0 1980 0 1 320
+box 1980 320 2970 560
 use JNWTR_IVX4_CV XB5 
-transform -1 0 2520 0 1 616
-box 2520 616 3780 1056
+transform -1 0 1980 0 1 560
+box 1980 560 2970 960
 use JNWTR_IVX8_CV XB6 
-transform -1 0 2520 0 1 1056
-box 2520 1056 3780 1848
+transform -1 0 1980 0 1 960
+box 1980 960 2970 1680
 use JNWTR_TAPCELLB_CV XC0 
-transform 1 0 2520 0 1 0
-box 2520 0 3780 176
+transform 1 0 1980 0 1 0
+box 1980 0 2970 160
 use JNWTR_BFX1_CV XC7 
-transform 1 0 2520 0 1 176
-box 2520 176 3780 440
+transform 1 0 1980 0 1 160
+box 1980 160 2970 400
 use JNWTR_TAPCELLB_CV XD0 
-transform -1 0 5040 0 1 0
-box 5040 0 6300 176
+transform -1 0 3960 0 1 0
+box 3960 0 4950 160
 use JNWTR_NRX1_CV XD8 
-transform -1 0 5040 0 1 176
-box 5040 176 6300 440
+transform -1 0 3960 0 1 160
+box 3960 160 4950 400
 use JNWTR_NDX1_CV XD9 
-transform -1 0 5040 0 1 440
-box 5040 440 6300 704
+transform -1 0 3960 0 1 400
+box 3960 400 4950 640
 use JNWTR_ORX1_CV XD10 
-transform -1 0 5040 0 1 704
-box 5040 704 6300 1144
+transform -1 0 3960 0 1 640
+box 3960 640 4950 1040
 use JNWTR_ANX1_CV XD11 
-transform -1 0 5040 0 1 1144
-box 5040 1144 6300 1584
+transform -1 0 3960 0 1 1040
+box 3960 1040 4950 1440
 use JNWTR_TAPCELLB_CV XE0 
-transform 1 0 5040 0 1 0
-box 5040 0 6300 176
+transform 1 0 3960 0 1 0
+box 3960 0 4950 160
 use JNWTR_SCX1_CV XE12 
-transform 1 0 5040 0 1 176
-box 5040 176 6300 1056
+transform 1 0 3960 0 1 160
+box 3960 160 4950 960
 use JNWTR_TAPCELLB_CV XF0 
-transform -1 0 7560 0 1 0
-box 7560 0 8820 176
+transform -1 0 5940 0 1 0
+box 5940 0 6930 160
 use JNWTR_SWX2_CV XF13 
-transform -1 0 7560 0 1 176
-box 7560 176 8820 440
+transform -1 0 5940 0 1 160
+box 5940 160 6930 400
 use JNWTR_SWX4_CV XF14 
-transform -1 0 7560 0 1 440
-box 7560 440 8820 880
+transform -1 0 5940 0 1 400
+box 5940 400 6930 800
 use JNWTR_TGPD_CV XF15 
-transform -1 0 7560 0 1 880
-box 7560 880 8820 1232
+transform -1 0 5940 0 1 800
+box 5940 800 6930 1120
 use JNWTR_TAPCELLB_CV XG0 
-transform 1 0 7560 0 1 0
-box 7560 0 8820 176
+transform 1 0 5940 0 1 0
+box 5940 0 6930 160
 use JNWTR_TGX2_CV XG1 
-transform 1 0 7560 0 1 176
-box 7560 176 8820 704
+transform 1 0 5940 0 1 160
+box 5940 160 6930 640
 use JNWTR_RPPO2 XH1 
-transform -1 0 10300 0 1 0
-box 10300 0 11636 2118
+transform -1 0 7774 0 1 0
+box 7774 0 8498 1720
 use JNWTR_RPPO4 XI1 
-transform 1 0 10444 0 1 0
-box 10444 0 12212 2118
+transform 1 0 7894 0 1 0
+box 7894 0 8834 1720
 use JNWTR_RPPO8 XJ1 
-transform -1 0 14988 0 1 0
-box 14988 0 17620 2118
+transform -1 0 10326 0 1 0
+box 10326 0 11698 1720
 use JNWTR_RPPO16 XK1 
-transform 1 0 15132 0 1 0
-box 15132 0 19492 2118
+transform 1 0 10446 0 1 0
+box 10446 0 12682 1720
+use JNWTR_TAPCELLB_CV XL0 
+transform -1 0 13972 0 1 0
+box 13972 0 14962 160
+use JNWTR_CKDIV2 XL1 
+transform -1 0 13972 0 1 160
+box 13972 160 14962 3200
+use JNWTR_TAPCELLB_CV XM0 
+transform 1 0 13972 0 1 0
+box 13972 0 14962 160
+use JNWTR_DFTRIX1_CV XM1 
+transform 1 0 13972 0 1 160
+box 13972 160 14962 2480
+use JNWTR_DFTSPCX1_CV XM2 
+transform 1 0 13972 0 1 2480
+box 13972 2480 14962 2960
+use JNWTR_TAPCELLB_CV XN0 
+transform -1 0 15952 0 1 0
+box 15952 0 16942 160
+use JNWTR_SCX1_CV XN1 
+transform -1 0 15952 0 1 160
+box 15952 160 16942 960
 use JNWTR_cut_M1M4_2x2 xcut0 
-transform 1 0 378 0 1 -360
-box 378 -360 478 -260
+transform 1 0 315 0 1 -300
+box 315 -300 403 -212
 use JNWTR_cut_M1M4_2x2 xcut1 
-transform 1 0 378 0 1 -360
-box 378 -360 478 -260
+transform 1 0 315 0 1 -300
+box 315 -300 403 -212
 use JNWTR_cut_M1M4_2x2 xcut2 
-transform 1 0 378 0 1 -360
-box 378 -360 478 -260
+transform 1 0 315 0 1 -300
+box 315 -300 403 -212
 use JNWTR_cut_M1M4_2x2 xcut3 
-transform 1 0 2042 0 1 -360
-box 2042 -360 2142 -260
+transform 1 0 1577 0 1 -300
+box 1577 -300 1665 -212
 use JNWTR_cut_M1M4_2x2 xcut4 
-transform 1 0 2042 0 1 -360
-box 2042 -360 2142 -260
+transform 1 0 1577 0 1 -300
+box 1577 -300 1665 -212
 use JNWTR_cut_M1M4_2x2 xcut5 
-transform 1 0 2042 0 1 -360
-box 2042 -360 2142 -260
+transform 1 0 1577 0 1 -300
+box 1577 -300 1665 -212
 use JNWTR_cut_M1M4_2x2 xcut6 
-transform 1 0 2042 0 1 -360
-box 2042 -360 2142 -260
+transform 1 0 1577 0 1 -300
+box 1577 -300 1665 -212
 use JNWTR_cut_M1M4_2x2 xcut7 
-transform 1 0 2042 0 1 -360
-box 2042 -360 2142 -260
+transform 1 0 1577 0 1 -300
+box 1577 -300 1665 -212
 use JNWTR_cut_M1M4_2x2 xcut8 
-transform 1 0 2898 0 1 -360
-box 2898 -360 2998 -260
+transform 1 0 2295 0 1 -300
+box 2295 -300 2383 -212
 use JNWTR_cut_M1M4_2x2 xcut9 
-transform 1 0 2898 0 1 -360
-box 2898 -360 2998 -260
+transform 1 0 2295 0 1 -300
+box 2295 -300 2383 -212
 use JNWTR_cut_M1M4_2x2 xcut10 
-transform 1 0 4562 0 1 -360
-box 4562 -360 4662 -260
+transform 1 0 3557 0 1 -300
+box 3557 -300 3645 -212
 use JNWTR_cut_M1M4_2x2 xcut11 
-transform 1 0 4562 0 1 -360
-box 4562 -360 4662 -260
+transform 1 0 3557 0 1 -300
+box 3557 -300 3645 -212
 use JNWTR_cut_M1M4_2x2 xcut12 
-transform 1 0 4562 0 1 -360
-box 4562 -360 4662 -260
+transform 1 0 3557 0 1 -300
+box 3557 -300 3645 -212
 use JNWTR_cut_M1M4_2x2 xcut13 
-transform 1 0 4562 0 1 -360
-box 4562 -360 4662 -260
+transform 1 0 3557 0 1 -300
+box 3557 -300 3645 -212
 use JNWTR_cut_M1M4_2x2 xcut14 
-transform 1 0 4562 0 1 -360
-box 4562 -360 4662 -260
+transform 1 0 3557 0 1 -300
+box 3557 -300 3645 -212
 use JNWTR_cut_M1M4_2x2 xcut15 
-transform 1 0 5418 0 1 -360
-box 5418 -360 5518 -260
+transform 1 0 4275 0 1 -300
+box 4275 -300 4363 -212
 use JNWTR_cut_M1M4_2x2 xcut16 
-transform 1 0 5418 0 1 -360
-box 5418 -360 5518 -260
+transform 1 0 4275 0 1 -300
+box 4275 -300 4363 -212
 use JNWTR_cut_M1M4_2x2 xcut17 
-transform 1 0 7082 0 1 -360
-box 7082 -360 7182 -260
+transform 1 0 5537 0 1 -300
+box 5537 -300 5625 -212
 use JNWTR_cut_M1M4_2x2 xcut18 
-transform 1 0 7082 0 1 -360
-box 7082 -360 7182 -260
+transform 1 0 5537 0 1 -300
+box 5537 -300 5625 -212
 use JNWTR_cut_M1M4_2x2 xcut19 
-transform 1 0 7082 0 1 -360
-box 7082 -360 7182 -260
+transform 1 0 5537 0 1 -300
+box 5537 -300 5625 -212
 use JNWTR_cut_M1M4_2x2 xcut20 
-transform 1 0 7082 0 1 -360
-box 7082 -360 7182 -260
+transform 1 0 5537 0 1 -300
+box 5537 -300 5625 -212
 use JNWTR_cut_M1M4_2x2 xcut21 
-transform 1 0 7938 0 1 -360
-box 7938 -360 8038 -260
+transform 1 0 6255 0 1 -300
+box 6255 -300 6343 -212
 use JNWTR_cut_M1M4_2x2 xcut22 
-transform 1 0 7938 0 1 -360
-box 7938 -360 8038 -260
+transform 1 0 6255 0 1 -300
+box 6255 -300 6343 -212
 use JNWTR_cut_M1M4_2x2 xcut23 
-transform 1 0 774 0 1 -720
-box 774 -720 874 -620
+transform 1 0 13569 0 1 -300
+box 13569 -300 13657 -212
 use JNWTR_cut_M1M4_2x2 xcut24 
-transform 1 0 774 0 1 -720
-box 774 -720 874 -620
+transform 1 0 13569 0 1 -300
+box 13569 -300 13657 -212
 use JNWTR_cut_M1M4_2x2 xcut25 
-transform 1 0 774 0 1 -720
-box 774 -720 874 -620
+transform 1 0 14287 0 1 -300
+box 14287 -300 14375 -212
 use JNWTR_cut_M1M4_2x2 xcut26 
-transform 1 0 1646 0 1 -720
-box 1646 -720 1746 -620
+transform 1 0 14287 0 1 -300
+box 14287 -300 14375 -212
 use JNWTR_cut_M1M4_2x2 xcut27 
-transform 1 0 1646 0 1 -720
-box 1646 -720 1746 -620
+transform 1 0 14287 0 1 -300
+box 14287 -300 14375 -212
 use JNWTR_cut_M1M4_2x2 xcut28 
-transform 1 0 1646 0 1 -720
-box 1646 -720 1746 -620
+transform 1 0 15549 0 1 -300
+box 15549 -300 15637 -212
 use JNWTR_cut_M1M4_2x2 xcut29 
-transform 1 0 1646 0 1 -720
-box 1646 -720 1746 -620
+transform 1 0 15549 0 1 -300
+box 15549 -300 15637 -212
 use JNWTR_cut_M1M4_2x2 xcut30 
-transform 1 0 1646 0 1 -720
-box 1646 -720 1746 -620
+transform 1 0 585 0 1 -600
+box 585 -600 673 -512
 use JNWTR_cut_M1M4_2x2 xcut31 
-transform 1 0 3294 0 1 -720
-box 3294 -720 3394 -620
+transform 1 0 585 0 1 -600
+box 585 -600 673 -512
 use JNWTR_cut_M1M4_2x2 xcut32 
-transform 1 0 3294 0 1 -720
-box 3294 -720 3394 -620
+transform 1 0 585 0 1 -600
+box 585 -600 673 -512
 use JNWTR_cut_M1M4_2x2 xcut33 
-transform 1 0 4166 0 1 -720
-box 4166 -720 4266 -620
+transform 1 0 1307 0 1 -600
+box 1307 -600 1395 -512
 use JNWTR_cut_M1M4_2x2 xcut34 
-transform 1 0 4166 0 1 -720
-box 4166 -720 4266 -620
+transform 1 0 1307 0 1 -600
+box 1307 -600 1395 -512
 use JNWTR_cut_M1M4_2x2 xcut35 
-transform 1 0 4166 0 1 -720
-box 4166 -720 4266 -620
+transform 1 0 1307 0 1 -600
+box 1307 -600 1395 -512
 use JNWTR_cut_M1M4_2x2 xcut36 
-transform 1 0 4166 0 1 -720
-box 4166 -720 4266 -620
+transform 1 0 1307 0 1 -600
+box 1307 -600 1395 -512
 use JNWTR_cut_M1M4_2x2 xcut37 
-transform 1 0 4166 0 1 -720
-box 4166 -720 4266 -620
+transform 1 0 1307 0 1 -600
+box 1307 -600 1395 -512
 use JNWTR_cut_M1M4_2x2 xcut38 
-transform 1 0 5814 0 1 -720
-box 5814 -720 5914 -620
+transform 1 0 2565 0 1 -600
+box 2565 -600 2653 -512
 use JNWTR_cut_M1M4_2x2 xcut39 
-transform 1 0 5814 0 1 -720
-box 5814 -720 5914 -620
+transform 1 0 2565 0 1 -600
+box 2565 -600 2653 -512
 use JNWTR_cut_M1M4_2x2 xcut40 
-transform 1 0 6686 0 1 -720
-box 6686 -720 6786 -620
+transform 1 0 3287 0 1 -600
+box 3287 -600 3375 -512
 use JNWTR_cut_M1M4_2x2 xcut41 
-transform 1 0 6686 0 1 -720
-box 6686 -720 6786 -620
+transform 1 0 3287 0 1 -600
+box 3287 -600 3375 -512
 use JNWTR_cut_M1M4_2x2 xcut42 
-transform 1 0 8334 0 1 -720
-box 8334 -720 8434 -620
+transform 1 0 3287 0 1 -600
+box 3287 -600 3375 -512
 use JNWTR_cut_M1M4_2x2 xcut43 
-transform 1 0 8334 0 1 -720
-box 8334 -720 8434 -620
+transform 1 0 3287 0 1 -600
+box 3287 -600 3375 -512
+use JNWTR_cut_M1M4_2x2 xcut44 
+transform 1 0 3287 0 1 -600
+box 3287 -600 3375 -512
+use JNWTR_cut_M1M4_2x2 xcut45 
+transform 1 0 4545 0 1 -600
+box 4545 -600 4633 -512
+use JNWTR_cut_M1M4_2x2 xcut46 
+transform 1 0 4545 0 1 -600
+box 4545 -600 4633 -512
+use JNWTR_cut_M1M4_2x2 xcut47 
+transform 1 0 5267 0 1 -600
+box 5267 -600 5355 -512
+use JNWTR_cut_M1M4_2x2 xcut48 
+transform 1 0 5267 0 1 -600
+box 5267 -600 5355 -512
+use JNWTR_cut_M1M4_2x2 xcut49 
+transform 1 0 6525 0 1 -600
+box 6525 -600 6613 -512
+use JNWTR_cut_M1M4_2x2 xcut50 
+transform 1 0 6525 0 1 -600
+box 6525 -600 6613 -512
+use JNWTR_cut_M1M4_2x2 xcut51 
+transform 1 0 13299 0 1 -600
+box 13299 -600 13387 -512
+use JNWTR_cut_M1M4_2x2 xcut52 
+transform 1 0 13299 0 1 -600
+box 13299 -600 13387 -512
+use JNWTR_cut_M1M4_2x2 xcut53 
+transform 1 0 14557 0 1 -600
+box 14557 -600 14645 -512
+use JNWTR_cut_M1M4_2x2 xcut54 
+transform 1 0 14557 0 1 -600
+box 14557 -600 14645 -512
+use JNWTR_cut_M1M4_2x2 xcut55 
+transform 1 0 14557 0 1 -600
+box 14557 -600 14645 -512
+use JNWTR_cut_M1M4_2x2 xcut56 
+transform 1 0 15279 0 1 -600
+box 15279 -600 15367 -512
+use JNWTR_cut_M1M4_2x2 xcut57 
+transform 1 0 15279 0 1 -600
+box 15279 -600 15367 -512
 << labels >>
-flabel locali s 19752 -360 19852 2478 0 FreeSans 400 0 0 0 AVSS
+flabel locali s 16164 -300 16252 3500 0 FreeSans 400 0 0 0 AVSS
 port 2 nsew signal bidirectional
-flabel locali s 20112 -720 20212 2838 0 FreeSans 400 0 0 0 AVDD
+flabel locali s 16464 -600 16552 3800 0 FreeSans 400 0 0 0 AVDD
 port 1 nsew signal bidirectional
 << properties >>
-string FIXED_BBOX -720 -720 20212 2838
+string FIXED_BBOX -600 -600 16552 3800
 << end >>

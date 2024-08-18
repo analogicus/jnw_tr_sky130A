@@ -82,7 +82,7 @@
         "TXT" : { "alias" : "","number" : 58, "datatype" :-1 , "material" : "marker" , "color" : "black","fill" : "fill"}
     },
     "technology" :{
-        "gamma" : 200,
+        "gamma" : 100,
         "grid" : 5,
         "spiceunit":1,
         "techlib" : "sky130A",
@@ -126,52 +126,52 @@
                         ]
     },
     "rules" : {
-        "ROUTE": { "horizontalgrid": 18, "verticalgrid" : 22 },
-        "CELL" : { "space" : 40, "digitalspace" : 18 },
+        "ROUTE": { "horizontalgrid": 30, "verticalgrid" : 40 },
+        "CELL" : { "space" : 20, "digitalspace" : 18 },
 
         "PPT"   : { "enclosure" : 0},
         "NPT"   : { "enclosure" : 0},
         "NWT"   : { "enclosure" : 0},
         "PFIELD"   : { "enclosure" : 0, "digitalspace" : 0},
 
-        "PP"   : { "enclosure" : 20, "ODencOpposite" : 20,"digitalspace" :0},
-        "NP"   : { "enclosure" : 20, "ODencOpposite" : 20,"digitalspace" :0},
-        "NW"   : { "enclosure" : 20, "digitalspace" : 0},
+        "PP"   : { "enclosure" : 40, "ODencOpposite" : 40,"digitalspace" :0},
+        "NP"   : { "enclosure" : 40, "ODencOpposite" : 40,"digitalspace" :0},
+        "NW"   : { "enclosure" : 40, "digitalspace" : 0},
 
 
-        "CO"   : { "space" : 10, "width" : 8 , "height" : 8},
-        "PTAPC"   : { "space" : 0, "width" : 20 , "height" : 20},
-        "VIA1" : { "space" : 12, "width" : 14 , "height" : 14},
-        "VIA2" : { "space" : 12, "width" : 14 , "height" : 14},
-        "VIA3" : { "space" : 12, "width" : 16 , "height" : 16},
-        "VIA4" : { "space" : 12, "width" : 16 , "height" : 16},
-        "VIA5" : { "space" : 12, "width" : 16 , "height" : 16},
+        "CO"   : { "space" : 20, "width" : 16 , "height" : 16},
+        "PTAPC"   : { "space" : 0, "width" : 40 , "height" : 40},
+        "VIA1" : { "space" : 20, "width" : 26 , "height" : 26},
+        "VIA2" : { "space" : 20, "width" : 28 , "height" : 28},
+        "VIA3" : { "space" : 20, "width" : 28 , "height" : 28},
+        "VIA4" : { "space" : 20, "width" : 28 , "height" : 28},
+        "VIA5" : { "space" : 20, "width" : 28 , "height" : 28},
 
-        "PDIFF" :{ "PTAPCencOpposite" : 4, "enclosure" : 4,"PTAPCenclosure" : 4},
-        "PTAP" :{ "PTAPCencOpposite" : 4, "enclosure" : 4,"PTAPCenclosure" : 4},
+        "PDIFF" :{ "PTAPCencOpposite" : 8, "enclosure" : 8,"PTAPCenclosure" : 8},
+        "PTAP" :{ "PTAPCencOpposite" : 8, "enclosure" : 8,"PTAPCenclosure" : 8},
+
+        "PLVT"   : { "space" : 60, "width" : 16 , "mingatelength" : 16, "enclosure" : 4},
+        "NLVT"   : { "space" : 60, "width" : 16, "mingatelength" : 16, "enclosure" : 4},
+
+        "PO"   : { "space" : 60, "width" : 16 , "mingatelength" : 16, "enclosure" : 4},
+        "POB"   : { "space" : 60, "width" : 16 , "mingatelength" : 16, "enclosure" : 4},
+
+        "OD"   : { "space" : 28, "enclosure" : 8, "PTAPCenclosure" : 8, "COencOpposite" : 8, "PTAPCencOpposite" : 8},
+        "ODB"   : { "space" : 28, "enclosure" : 8, "COencOpposite" : 8},
+
+        "NDIFFC"   : { "width" : 20},
+        "PDIFFC"   : { "width" : 20},
+
+        "M1"   : { "space" : 30, "ana_width": 30, "cap_width" : 40, "width" : 30, "minwidth":30,  "VIA1enclosure" : 3, "VIA1encOpposite" : 6, "capspace" : 32, "PTAPCenclosure": 0},
+        "M2"   : { "space" : 30, "width" : 30, "minwidth":30,  "VIA1encOpposite" : 6, "VIA1enclosure" : 3, "VIA2encOpposite" : 6, "VIA2enclosure" : 3, "capspace" : 32},
+        "M3"   : { "space" : 30, "width" : 30, "minwidth":30 , "VIA2enclosure" : 3, "VIA2encOpposite" : 6, "VIA3enclosure" : 3,"VIA3encOpposite" : 6, "capspace" : 32},
+        "M4"   : { "space" : 30, "width" : 30, "minwidth":30 , "cap_width" : 40, "VIA3enclosure" : 3, "VIA3encOpposite" : 6,"VIA4enclosure" : 3, "VIA4encOpposite" : 6, "capspace" : 32},
+        "M5"   : { "space" : 30, "width" : 30, "minwidth":30 , "cap_width" : 40, "VIA4enclosure" : 3, "VIA4encOpposite" : 6,"VIA5enclosure" : 3, "VIA5encOpposite" : 6, "capspace" : 32},
 
 
-        "PLVT"   : { "space" : 30, "width" : 9 , "mingatelength" : 9, "enclosure" : 2},
-        "NLVT"   : { "space" : 30, "width" : 9 , "mingatelength" : 9, "enclosure" : 2},
-        "PO"   : { "space" : 30, "width" : 9 , "mingatelength" : 9, "enclosure" : 2},
-        "POB"   : { "space" : 30, "width" : 9 , "mingatelength" : 9, "enclosure" : 2},
-
-        "OD"   : { "space" : 14, "enclosure" : 4, "PTAPCenclosure" : 4, "COencOpposite" : 4, "PTAPCencOpposite" : 4},
-        "ODB"   : { "space" : 14, "enclosure" : 4, "COencOpposite" : 4},
-
-        "NDIFFC"   : { "width" : 10},
-        "PDIFFC"   : { "width" : 10},
-
-        "M1"   : { "space" : 15, "ana_width": 15, "cap_width" : 15, "width" : 15, "minwidth":15,  "VIA1enclosure" : 1.5, "VIA1encOpposite" : 3, "capspace" : 16, "PTAPCenclosure": 0},
-        "M2"   : { "space" : 15, "width" : 15, "minwidth":15,  "VIA1encOpposite" : 3, "VIA1enclosure" : 1.5, "VIA2encOpposite" : 3, "VIA2enclosure" : 1.5, "capspace" : 16},
-        "M3"   : { "space" : 16, "width" : 19, "minwidth":15 , "VIA2enclosure" : 1.5, "VIA2encOpposite" : 3, "VIA3enclosure" : 1.5,"VIA3encOpposite" : 3, "capspace" : 16},
-        "M4"   : { "space" : 18, "width" : 19, "minwidth":15 , "cap_width" : 20, "VIA3enclosure" : 1.5, "VIA3encOpposite" : 3,"VIA4enclosure" : 1.5, "VIA4encOpposite" : 3, "capspace" : 16},
-        "M5"   : { "space" : 18, "width" : 19, "minwidth":15 , "cap_width" : 20, "VIA4enclosure" : 1.5, "VIA4encOpposite" : 3,"VIA5enclosure" : 1.5, "VIA5encOpposite" : 3, "capspace" : 16},
-
-
-        "OP"   : { "POenclosure" : 0, "POencOpposite" : 40},
-        "RE"   : { "POenclosure" : 48},
-        "PRES" : { "POenclosure" : 48}
+        "OP"   : { "POenclosure" : 0, "POencOpposite" : 80},
+        "RE"   : { "POenclosure" : 96},
+        "PRES" : { "POenclosure" : 96}
 
 
     }

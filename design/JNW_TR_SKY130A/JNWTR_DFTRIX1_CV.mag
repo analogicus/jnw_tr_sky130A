@@ -1,50 +1,50 @@
 magic
 tech sky130A
 magscale 1 1
-timestamp 1723845600
+timestamp 1723932000
 << checkpaint >>
-rect 0 0 1260 2552
+rect 0 0 990 2320
 << locali >>
-rect 216 2361 300 2391
-rect 300 2053 432 2083
-rect 300 2053 330 2391
-rect 102 1833 216 1863
-rect 102 2449 216 2479
-rect 102 1833 132 2479
-rect 990 865 1098 895
-rect 162 2449 270 2479
-rect 162 425 270 455
-rect 990 2449 1098 2479
-rect 378 2493 486 2523
+rect 180 2145 255 2175
+rect 255 1865 360 1895
+rect 255 1865 285 2175
+rect 75 1665 180 1695
+rect 75 2225 180 2255
+rect 75 1665 105 2255
+rect 765 785 855 815
+rect 135 2225 225 2255
+rect 135 385 225 415
+rect 765 2225 855 2255
+rect 315 2265 405 2295
 << m3 >>
-rect 774 0 874 2552
-rect 378 0 478 2552
-rect 774 0 874 2552
-rect 378 0 478 2552
+rect 585 0 673 2320
+rect 315 0 403 2320
+rect 585 0 673 2320
+rect 315 0 403 2320
 use JNWTR_TAPCELLB_CV XA3 
 transform 1 0 0 0 1 0
-box 0 0 1260 176
+box 0 0 990 160
 use JNWTR_DFRNQNX1_CV XA2 
-transform 1 0 0 0 1 176
-box 0 176 1260 2288
+transform 1 0 0 0 1 160
+box 0 160 990 2080
 use JNWTR_IVTRIX1_CV XA0 
-transform 1 0 0 0 1 2288
-box 0 2288 1260 2552
+transform 1 0 0 0 1 2080
+box 0 2080 990 2320
 << labels >>
-flabel locali s 990 865 1098 895 0 FreeSans 400 0 0 0 D
+flabel locali s 765 785 855 815 0 FreeSans 400 0 0 0 D
 port 1 nsew signal bidirectional
-flabel locali s 162 2449 270 2479 0 FreeSans 400 0 0 0 C
+flabel locali s 135 2225 225 2255 0 FreeSans 400 0 0 0 C
 port 3 nsew signal bidirectional
-flabel locali s 162 425 270 455 0 FreeSans 400 0 0 0 CK
+flabel locali s 135 385 225 415 0 FreeSans 400 0 0 0 CK
 port 2 nsew signal bidirectional
-flabel locali s 990 2449 1098 2479 0 FreeSans 400 0 0 0 CN
+flabel locali s 765 2225 855 2255 0 FreeSans 400 0 0 0 CN
 port 4 nsew signal bidirectional
-flabel locali s 378 2493 486 2523 0 FreeSans 400 0 0 0 Y
+flabel locali s 315 2265 405 2295 0 FreeSans 400 0 0 0 Y
 port 5 nsew signal bidirectional
-flabel m3 s 774 0 874 2552 0 FreeSans 400 0 0 0 AVDD
+flabel m3 s 585 0 673 2320 0 FreeSans 400 0 0 0 AVDD
 port 6 nsew signal bidirectional
-flabel m3 s 378 0 478 2552 0 FreeSans 400 0 0 0 AVSS
+flabel m3 s 315 0 403 2320 0 FreeSans 400 0 0 0 AVSS
 port 7 nsew signal bidirectional
 << properties >>
-string FIXED_BBOX 0 0 1260 2552
+string FIXED_BBOX 0 0 990 2320
 << end >>

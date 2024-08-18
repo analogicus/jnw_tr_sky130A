@@ -225,3 +225,66 @@ N 2500.0 260.0 2480.0 260.0 {lab=N20}
 C {devices/lab_pin.sym} 2500.0 260.0 2 0 {name=l94 sig_type=std_logic lab=N20 }
 N 2460.0 280.0 2440.0 280.0 {lab=AVSS}
 C {devices/lab_pin.sym} 2460.0 280.0 2 0 {name=l95 sig_type=std_logic lab=AVSS }
+C {JNW_TR_SKY130A/JNWTR_TAPCELLB_CV.sym} 2400 390.0 0 0 {name=XXL0}
+N 2420.0 370.0 2400.0 370.0 {lab=AVDD}
+C {devices/lab_pin.sym} 2420.0 370.0 2 0 {name=l96 sig_type=std_logic lab=AVDD }
+N 2420.0 410.0 2400.0 410.0 {lab=AVSS}
+C {devices/lab_pin.sym} 2420.0 410.0 2 0 {name=l97 sig_type=std_logic lab=AVSS }
+C {JNW_TR_SKY130A/JNWTR_CKDIV2.sym} 2400 540.0 0 0 {name=XXL1}
+N 2360.0 540.0 2380.0 540.0 {lab=AVDD}
+C {devices/lab_pin.sym} 2360.0 540.0 0 0 {name=l98 sig_type=std_logic lab=AVDD }
+N 2360.0 560.0 2380.0 560.0 {lab=AVSS}
+C {devices/lab_pin.sym} 2360.0 560.0 0 0 {name=l99 sig_type=std_logic lab=AVSS }
+N 2360.0 580.0 2380.0 580.0 {lab=CKI21}
+C {devices/lab_pin.sym} 2360.0 580.0 0 0 {name=l100 sig_type=std_logic lab=CKI21 }
+N 2360.0 600.0 2380.0 600.0 {lab=CKO21}
+C {devices/lab_pin.sym} 2360.0 600.0 0 0 {name=l101 sig_type=std_logic lab=CKO21 }
+N 2360.0 620.0 2380.0 620.0 {lab=CKO50DC21}
+C {devices/lab_pin.sym} 2360.0 620.0 0 0 {name=l102 sig_type=std_logic lab=CKO50DC21 }
+N 2360.0 640.0 2380.0 640.0 {lab=RN21}
+C {devices/lab_pin.sym} 2360.0 640.0 0 0 {name=l103 sig_type=std_logic lab=RN21 }
+C {JNW_TR_SKY130A/JNWTR_TAPCELLB_CV.sym} 2400 760.0 0 0 {name=XXM0}
+N 2420.0 740.0 2400.0 740.0 {lab=AVDD}
+C {devices/lab_pin.sym} 2420.0 740.0 2 0 {name=l104 sig_type=std_logic lab=AVDD }
+N 2420.0 780.0 2400.0 780.0 {lab=AVSS}
+C {devices/lab_pin.sym} 2420.0 780.0 2 0 {name=l105 sig_type=std_logic lab=AVSS }
+C {JNW_TR_SKY130A/JNWTR_DFTRIX1_CV.sym} 2400 910.0 0 0 {name=XXM1}
+N 2360.0 910.0 2380.0 910.0 {lab=D22}
+C {devices/lab_pin.sym} 2360.0 910.0 0 0 {name=l106 sig_type=std_logic lab=D22 }
+N 2360.0 930.0 2380.0 930.0 {lab=CK22}
+C {devices/lab_pin.sym} 2360.0 930.0 0 0 {name=l107 sig_type=std_logic lab=CK22 }
+N 2360.0 950.0 2380.0 950.0 {lab=C22}
+C {devices/lab_pin.sym} 2360.0 950.0 0 0 {name=l108 sig_type=std_logic lab=C22 }
+N 2360.0 970.0 2380.0 970.0 {lab=CN22}
+C {devices/lab_pin.sym} 2360.0 970.0 0 0 {name=l109 sig_type=std_logic lab=CN22 }
+N 2360.0 990.0 2380.0 990.0 {lab=Y22}
+C {devices/lab_pin.sym} 2360.0 990.0 0 0 {name=l110 sig_type=std_logic lab=Y22 }
+N 2360.0 1010.0 2380.0 1010.0 {lab=AVDD}
+C {devices/lab_pin.sym} 2360.0 1010.0 0 0 {name=l111 sig_type=std_logic lab=AVDD }
+N 2360.0 1030.0 2380.0 1030.0 {lab=AVSS}
+C {devices/lab_pin.sym} 2360.0 1030.0 0 0 {name=l112 sig_type=std_logic lab=AVSS }
+C {JNW_TR_SKY130A/JNWTR_DFTSPCX1_CV.sym} 2900 0 0 0 {name=XXM2}
+N 2880.0 -60.0 2900.0 -60.0 {lab=D23}
+C {devices/lab_pin.sym} 2880.0 -60.0 0 0 {name=l113 sig_type=std_logic lab=D23 }
+N 2880.0 0.0 2900.0 0.0 {lab=CK23}
+C {devices/lab_pin.sym} 2880.0 0.0 0 0 {name=l114 sig_type=std_logic lab=CK23 }
+N 3020.0 -60.0 3000.0 -60.0 {lab=Q23}
+C {devices/lab_pin.sym} 3020.0 -60.0 2 0 {name=l115 sig_type=std_logic lab=Q23 }
+N 2980.0 -90.0 2960.0 -90.0 {lab=AVDD}
+C {devices/lab_pin.sym} 2980.0 -90.0 2 0 {name=l116 sig_type=std_logic lab=AVDD }
+N 2980.0 30.0 2960.0 30.0 {lab=AVSS}
+C {devices/lab_pin.sym} 2980.0 30.0 2 0 {name=l117 sig_type=std_logic lab=AVSS }
+C {JNW_TR_SKY130A/JNWTR_TAPCELLB_CV.sym} 2900 230.0 0 0 {name=XXN0}
+N 2920.0 210.0 2900.0 210.0 {lab=AVDD}
+C {devices/lab_pin.sym} 2920.0 210.0 2 0 {name=l118 sig_type=std_logic lab=AVDD }
+N 2920.0 250.0 2900.0 250.0 {lab=AVSS}
+C {devices/lab_pin.sym} 2920.0 250.0 2 0 {name=l119 sig_type=std_logic lab=AVSS }
+C {JNW_TR_SKY130A/JNWTR_SCX1_CV.sym} 2900 380.0 0 0 {name=XXN1}
+N 2860.0 380.0 2880.0 380.0 {lab=A24}
+C {devices/lab_pin.sym} 2860.0 380.0 0 0 {name=l120 sig_type=std_logic lab=A24 }
+N 2860.0 400.0 2880.0 400.0 {lab=Y24}
+C {devices/lab_pin.sym} 2860.0 400.0 0 0 {name=l121 sig_type=std_logic lab=Y24 }
+N 2860.0 420.0 2880.0 420.0 {lab=AVDD}
+C {devices/lab_pin.sym} 2860.0 420.0 0 0 {name=l122 sig_type=std_logic lab=AVDD }
+N 2860.0 440.0 2880.0 440.0 {lab=AVSS}
+C {devices/lab_pin.sym} 2860.0 440.0 0 0 {name=l123 sig_type=std_logic lab=AVSS }
