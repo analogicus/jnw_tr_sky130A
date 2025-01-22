@@ -4,6 +4,7 @@ github: analogicus
 author: Carsten Wulff
 tagline: Standard cell library for analog design
 email: carsten@wulff.no
+baseurl: "/jnw_tr_sky130A"
 url: analogicus.github.io
 doc:
   libraries:
