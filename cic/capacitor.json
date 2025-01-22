@@ -59,8 +59,12 @@
               "symbol" : "cic/cap"
           },
           "beforeRoute" : {
-              "addConnectivityRoutes" : [ ["M4", "^A$","--|-","onTopR,track2,routeWidth=cap_width"],
-                                          ["M5", "^B$","--|-","onTopR,track2,routeWidth=cap_width"]
+              "addConnectivityRoutes" : [ ["M4", "^A$","||","onTopL,track-4,routeWidth=cap_width"],
+                                          ["M4", "^A$","||","onTopR,track-4,routeWidth=cap_width"],
+                                          ["M4", "^A$","-","onTopR,track-4,routeWidth=cap_width"],
+                                          ["M5", "^B$","||","onTopL,track-4,routeWidth=cap_width"],
+                                          ["M5", "^B$","||","onTopR,track-4,routeWidth=cap_width"],
+                                          ["M5", "^B$","-","onTopR,track-4,routeWidth=cap_width"]
                                         ]
           },
           "afterRoute" : {

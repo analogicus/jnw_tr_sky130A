@@ -1,40 +1,38 @@
 magic
 tech sky130A
 magscale 1 1
-timestamp 1736031600
+timestamp 1737500400
 << checkpaint >>
-rect 60 0 1200 1200
+rect 240 0 1560 1320
 << m3 >>
-rect 500 0 930 40
-rect 330 660 500 700
-rect 330 60 500 100
-rect 500 600 930 640
-rect 500 0 540 700
-rect 60 60 600 110
+rect 490 0 530 830
+rect 1270 0 1310 830
+rect 780 0 1020 50
+rect 1020 0 1560 50
+rect 240 0 780 50
 << m4 >>
-rect 500 0 930 40
-rect 330 660 500 700
-rect 330 60 500 100
-rect 500 600 930 640
-rect 500 0 540 700
-rect 60 60 600 110
+rect 490 0 530 830
+rect 1270 0 1310 830
+rect 780 0 1020 50
+rect 1020 0 1560 50
+rect 240 0 780 50
 use JNWTR_CAPX1 XA1 
-transform 1 0 60 0 1 60
-box 60 60 600 600
+transform 1 0 240 0 1 0
+box 240 0 780 540
 use JNWTR_CAPX1 XA2 
-transform 1 0 60 0 1 660
-box 60 660 600 1200
+transform 1 0 240 0 1 780
+box 240 780 780 1320
 use JNWTR_CAPX1 XB1 
-transform 1 0 660 0 1 0
-box 660 0 1200 540
+transform 1 0 1020 0 1 0
+box 1020 0 1560 540
 use JNWTR_CAPX1 XB2 
-transform 1 0 660 0 1 600
-box 660 600 1200 1140
+transform 1 0 1020 0 1 780
+box 1020 780 1560 1320
 << labels >>
-flabel m3 s 60 60 600 110 0 FreeSans 400 0 0 0 A
+flabel m3 s 240 0 780 50 0 FreeSans 400 0 0 0 A
 port 1 nsew signal bidirectional
-flabel m4 s 60 60 600 110 0 FreeSans 400 0 0 0 B
+flabel m4 s 240 0 780 50 0 FreeSans 400 0 0 0 B
 port 2 nsew signal bidirectional
 << properties >>
-string FIXED_BBOX 60 0 1200 1200
+string FIXED_BBOX 240 0 1560 1320
 << end >>

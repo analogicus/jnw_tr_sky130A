@@ -1,24 +1,24 @@
 magic
 tech sky130A
 magscale 1 1
-timestamp 1736031600
+timestamp 1737500400
 << checkpaint >>
-rect -600 -600 17002 3800
+rect -600 -600 17182 3800
 << locali >>
-rect 16614 -300 16702 3500
-rect -300 -300 16702 -212
-rect -300 3412 16702 3500
+rect 16794 -300 16882 3500
+rect -300 -300 16882 -212
+rect -300 3412 16882 3500
 rect -300 -300 -212 3500
-rect 16614 -300 16702 3500
+rect 16794 -300 16882 3500
 rect 6068 -300 6776 64
 rect 6912 -300 7836 64
 rect 7972 -300 9328 64
 rect 9464 -300 11684 64
-rect 16914 -600 17002 3800
-rect -600 -600 17002 -512
-rect -600 3712 17002 3800
+rect 17094 -600 17182 3800
+rect -600 -600 17182 -512
+rect -600 3712 17182 3800
 rect -600 -600 -512 3800
-rect 16914 -600 17002 3800
+rect 17094 -600 17182 3800
 << m3 >>
 rect 315 -300 403 160
 rect 315 -300 403 320
@@ -163,11 +163,11 @@ use JNWTR_DFRNQNX1_CV XN2
 transform 1 0 13972 0 1 160
 box 13972 160 14962 2080
 use JNWTR_CAPX4 XO1 
-transform -1 0 16462 0 1 0
-box 16462 0 17602 1200
+transform -1 0 16822 0 1 0
+box 16822 0 18142 1320
 use JNWTR_CAPX1 XO0 
-transform -1 0 15802 0 1 1280
-box 15802 1280 16342 1820
+transform -1 0 15802 0 1 1560
+box 15802 1560 16342 2100
 use JNWTR_cut_M1M4_2x2 xcut0 
 transform 1 0 315 0 1 -300
 box 315 -300 403 -212
@@ -325,10 +325,10 @@ use JNWTR_cut_M1M4_2x2 xcut51
 transform 1 0 14557 0 1 -600
 box 14557 -600 14645 -512
 << labels >>
-flabel locali s 16614 -300 16702 3500 0 FreeSans 400 0 0 0 AVSS
+flabel locali s 16794 -300 16882 3500 0 FreeSans 400 0 0 0 AVSS
 port 2 nsew signal bidirectional
-flabel locali s 16914 -600 17002 3800 0 FreeSans 400 0 0 0 AVDD
+flabel locali s 17094 -600 17182 3800 0 FreeSans 400 0 0 0 AVDD
 port 1 nsew signal bidirectional
 << properties >>
-string FIXED_BBOX -600 -600 17002 3800
+string FIXED_BBOX -600 -600 17182 3800
 << end >>
