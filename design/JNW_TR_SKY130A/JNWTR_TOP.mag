@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 1
-timestamp 1723932000
+timestamp 1736031600
 << checkpaint >>
 rect -600 -600 17002 3800
 << locali >>
@@ -164,10 +164,10 @@ transform 1 0 13972 0 1 160
 box 13972 160 14962 2080
 use JNWTR_CAPX4 XO1 
 transform -1 0 16462 0 1 0
-box 16462 0 17602 1140
+box 16462 0 17602 1200
 use JNWTR_CAPX1 XO0 
-transform -1 0 15802 0 1 1220
-box 15802 1220 16342 1760
+transform -1 0 15802 0 1 1280
+box 15802 1280 16342 1820
 use JNWTR_cut_M1M4_2x2 xcut0 
 transform 1 0 315 0 1 -300
 box 315 -300 403 -212

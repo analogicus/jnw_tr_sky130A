@@ -5,7 +5,7 @@
 
 
 .subckt CAPX4 A B
-XA1 A B CAPX1 xoffset=2
+XA1 A B CAPX1 xoffset=2 yoffset=1.5
 XA2 A B CAPX1 yoffset=1.5
 XB1 A B CAPX1 xoffset=2
 XB2 A B CAPX1 yoffset=1.5

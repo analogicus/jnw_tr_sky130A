@@ -1,0 +1,14 @@
+name: GDS
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+concurrency:
+  group: "gds"
+  cancel-in-progress: true
+
+jobs:
+  gds:
+    uses: analogicus/jnw-actions/.github/workflows/gds.yaml@main

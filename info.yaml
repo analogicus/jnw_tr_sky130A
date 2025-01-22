@@ -1,0 +1,41 @@
+library: JNW_TR_SKY130A
+cell: JNWTR_TOP
+github: analogicus
+author: Carsten Wulff
+tagline: Standard cell library for analog design
+email: carsten@wulff.no
+url: analogicus.github.io
+doc:
+  libraries:
+    JNW_TR_SKY130A:
+      - JNWTR_TOP
+      - JNWTR_SCX1_CV
+      - JNWTR_TIEH_CV
+      #- JNWTR_ANX1_CV
+      #- JNWTR_BFX1_CV
+      #- JNWTR_CAPX1
+      #- JNWTR_CAPX4
+      #- JNWTR_CKDIV2_CV
+      #- JNWTR_DFRNQNX1_CV
+      #- JNWTR_DFTSPCX1_CV
+      #- JNWTR_IVTRIX1_CV
+      #- JNWTR_IVX1_CV
+      #- JNWTR_IVX2_CV
+      #- JNWTR_IVX4_CV
+      #- JNWTR_IVX8_CV
+      #- JNWTR_NCHDL
+      #- JNWTR_PCHDL
+      #- JNWTR_NDX1_CV
+      #- JNWTR_NRX1_CV
+      #- JNWTR_ORX1_CV
+      #- JNWTR_RPPO16
+      #- JNWTR_RPPO2
+      #- JNWTR_RPPO4
+      #- JNWTR_RPPO8
+      #- JNWTR_SWX2_CV
+      #- JNWTR_TAPCELLB_CV
+      #- JNWTR_TGPD_CV
+      #- JNWTR_TGX2_CV
+      #- JNWTR_TIEL_CV
+sim:
+  IVX1_CV: make typical

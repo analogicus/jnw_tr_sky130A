@@ -51,7 +51,8 @@
                                       ["PO","A","MN0:G-MP0:G"] ]
           },
           "meta" : {
-              "symbol" : "cic/tieh"
+              "symbol" : "cic/tieh",
+              "noSchematic" : true
           },
          "afterRoute"  : {
               "addPortOnRects" : [  ["Y","M1", "MP0:D"] ]
@@ -308,7 +309,8 @@
           "class" : "Layout::LayoutDigitalCell",
           "boundaryIgnoreRouting" : 0,
            "meta" : {
-              "symbol" : "cic/sc"
+               "symbol" : "cic/sc",
+               "noSchematic" : true
           },
           "beforeRoute" : {
               "addDirectedRoutes" :[

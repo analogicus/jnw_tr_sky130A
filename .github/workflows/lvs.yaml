@@ -1,0 +1,14 @@
+name: LVS
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+concurrency:
+  group: "lvs"
+  cancel-in-progress: true
+
+jobs:
+  lvs:
+    uses: analogicus/jnw-actions/.github/workflows/lvs.yaml@main
