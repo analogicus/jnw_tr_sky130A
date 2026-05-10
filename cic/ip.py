@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
 """
-Generate resistors_uniform.json with widened RES2/4/8/16 cells.
+Generate resistors_uniform.json from a unit-based template.
 
-The hand-curated abstract patterns in resistors.json grow column count
-per variant via inherit + copyColumns at runtime. This generator
-simulates the same copyColumns chain in Python to get the per-variant
-runtime pattern, then dash-pads each layer symmetrically so the cell
-widths approximately match multiples of the rey_atr transistor unit
-(~88 800 nm): RES2/RES4 ~ 1x, RES8 ~ 2x, RES16 ~ 3x. The output cells
-are concrete (no inherit, no copyColumns).
+Each variant is a fresh GdsPatternHighResistor cell built around a fixed
+unit stripe (constant L x W) so all units have the same resistance per
+stripe. Variants compose N units side-by-side with M1 wired for either
+series (R = N * R_unit) or parallel (R = R_unit / N).
 
-Pad counts are estimates based on the ~3 600 nm per added base column
-observed in the previous build. Adjust if the rebuilt widths drift too
-far from target.
+Generated cells:
+  RES1                       - single unit, ports top-left (N), bottom-right (P)
+  RES2, RES4, RES8, RES16    - N units in series, both ports at top
+  RES_P2, RES_P4, RES_P8,    - N units in parallel
+  RES_P16
+
+The existing RPPO* wrappers are carried through unchanged - they wrap
+the same RES2 / RES4 / RES8 / RES16 names.
+
+Each unit slot is 4 columns wide. Cell width = 4*N + 1 columns. Stripe
+positions are col 2, 6, 10, ... (one stripe per slot). DMYPO sits on
+the outer left/right edges only.
 """
 import json
 import os
@@ -21,96 +27,146 @@ CIC_DIR = os.path.dirname(os.path.abspath(__file__))
 SRC_PATH = os.path.join(CIC_DIR, "resistors.json")
 OUT_PATH = os.path.join(CIC_DIR, "resistors_uniform.json")
 
-# RES2's own copyColumns chain (always applied first).
-RES2_OWN_OPS = [
-    {"count": 1, "offset": 1, "length": 1},
-    {"count": 1, "offset": 4, "length": 1},
-    {"count": 1, "offset": 7, "length": 1},
-]
-
-# Per-variant: extra copyColumns on top of RES2_OWN_OPS, plus pad count
-# (number of dashes added across both sides combined).
-VARIANTS = [
-    ("RES2",  [],                                                  10),
-    ("RES4",  [{"count": 1, "offset": 1, "length": 6}],             4),
-    ("RES8",  [{"count": 3, "offset": 1, "length": 6}],            17),
-    ("RES16", [{"count": 7, "offset": 1, "length": 6}],            18),
-]
+ROWS = 12  # vertical extent (same as legacy RES2 base pattern)
 
 
-def apply_copy_columns(s, ops):
-    """Apply ciccreator-style copyColumns to a pattern row.
-
-    Each op: extract substring s[offset:offset+length] once, then insert
-    it at position (default = offset) count times. Matches the reference
-    implementation in ciccreator/cic-core/src/core/patterntile.cpp.
-    """
-    for op in ops:
-        offset = op["offset"]
-        length = op["length"]
-        position = op.get("position", offset)
-        count = op["count"]
-        if offset > len(s):
-            continue  # ciccreator warns and skips
-        block = s[offset:offset + length]
-        for _ in range(count):
-            s = s[:position] + block + s[position:]
-    return s
+def stripe_cols(N):
+    """Column index of each stripe in an N-unit cell."""
+    return [2 + 4 * i for i in range(N)]
 
 
-def pad_row(row, pad_left, pad_right):
-    """Symmetric dash-pad. Bulk substrate everywhere on the new edges.
-
-    Note: 'N' / 'P' port markers and 'X' DMYPO edge markers stay at
-    their original position, which means after padding they sit just
-    inside the new cell edge rather than on it. If routing or DRC
-    complains about that, switch to a marker-aware pad here.
-    """
-    return "-" * pad_left + row + "-" * pad_right
+def cell_cols(N):
+    return 4 * N + 1
 
 
-def expand_layer(layer_entry, ops, pad):
-    layer = layer_entry[0]
-    pad_left = pad // 2
-    pad_right = pad - pad_left
-    rows = [pad_row(apply_copy_columns(r, ops), pad_left, pad_right)
-            for r in layer_entry[1:]]
-    return [layer] + rows
+def por_rows(N):
+    cols = cell_cols(N)
+    out = ["-" * cols, "-" * cols]
+    for _ in range(ROWS - 2):
+        row = ["-"] * cols
+        for sc in stripe_cols(N):
+            row[sc] = "X"
+        out.append("".join(row))
+    return out
 
 
-def build_concrete(name, base_cell, variant_ops, pad):
-    cell = {"name": name}
-    for f in ("class", "yoffset", "xoffset", "polyWidthAdjust", "beforePlace"):
-        if f in base_cell:
-            cell[f] = base_cell[f]
+def dmypo_rows(N):
+    cols = cell_cols(N)
+    out = ["-" * cols, "-" * cols]
+    for _ in range(ROWS - 2):
+        row = ["-"] * cols
+        row[0] = "X"
+        row[cols - 1] = "X"
+        out.append("".join(row))
+    return out
 
-    src_after = base_cell.get("afterNew", {})
-    new_after = {}
-    for f in ("horizontalGridMultiplier", "verticalGridMultiplier"):
-        if f in src_after:
-            new_after[f] = src_after[f]
-    if new_after:
-        cell["afterNew"] = new_after
 
-    all_ops = RES2_OWN_OPS + variant_ops
-    cell["fillCoordinatesFromStrings"] = [
-        expand_layer(le, all_ops, pad)
-        for le in base_cell["fillCoordinatesFromStrings"]
-    ]
-    return cell
+def cpoxr_rows(N):
+    cols = cell_cols(N)
+    out = []
+    for r in range(ROWS):
+        row = ["-"] * cols
+        if r in (2, 3, ROWS - 2, ROWS - 1):
+            for sc in stripe_cols(N):
+                row[sc] = "X"
+        out.append("".join(row))
+    return out
+
+
+def m1_rows(N, mode):
+    cols = cell_cols(N)
+    sc = stripe_cols(N)
+    out = []
+    for r in range(ROWS):
+        row = ["-"] * cols
+        if mode == "P":
+            # Parallel: full top trunk (with N port) and full bottom trunk
+            # (with P port) shared across every stripe; vertical M1 stubs
+            # over the top contacts for via reach.
+            if r == 0:
+                row = ["X"] * cols
+                row[0] = "N"
+            elif r in (1, 2, 3):
+                for c in sc:
+                    row[c] = "X"
+            elif r in (ROWS - 2, ROWS - 1):
+                row = ["X"] * cols
+                row[cols - 1] = "P"
+        elif mode == "S":
+            # Series: N port at top-left, M1 over s1 top, top trunks
+            # joining (s2,s3),(s4,s5),..., M1 over sN top, P port at
+            # top-right; bottom trunks join (s1,s2),(s3,s4),... .
+            if r == 0:
+                # N + M1 covering s1 top
+                for c in range(sc[0] + 1):
+                    row[c] = "X"
+                row[0] = "N"
+                # top trunks at odd-indexed pairs (s2-s3, s4-s5, ...)
+                for k in range((N - 1) // 2):
+                    for c in range(sc[2 * k + 1], sc[2 * k + 2] + 1):
+                        row[c] = "X"
+                # M1 covering sN top + P port
+                for c in range(sc[N - 1], cols):
+                    row[c] = "X"
+                row[cols - 1] = "P"
+            elif r in (1, 2, 3):
+                for c in sc:
+                    row[c] = "X"
+            elif r in (ROWS - 2, ROWS - 1):
+                # bottom trunks at even-indexed pairs (s1-s2, s3-s4, ...)
+                for k in range(N // 2):
+                    for c in range(sc[2 * k], sc[2 * k + 1] + 1):
+                        row[c] = "X"
+        out.append("".join(row))
+    return out
+
+
+def build_variant(name, N, mode):
+    return {
+        "name": name,
+        "class": "Gds::GdsPatternHighResistor",
+        "yoffset": -0.5,
+        "xoffset": -0.5,
+        "polyWidthAdjust": 0,
+        "abstract": 0,
+        "afterNew": {
+            "horizontalGridMultiplier": 1.2,
+            "verticalGridMultiplier": 3,
+        },
+        "beforePlace": {
+            "addEnclosuresByRectangle": [
+                ["PO", [0, 2, "width", 6], ["OP"]],
+                ["PO", ["self"], ["PWT"]],
+            ]
+        },
+        "fillCoordinatesFromStrings": [
+            ["POR"]   + por_rows(N),
+            ["DMYPO"] + dmypo_rows(N),
+            ["CPOXR"] + cpoxr_rows(N),
+            ["M1"]    + m1_rows(N, mode),
+        ],
+    }
 
 
 def main():
     with open(SRC_PATH) as f:
         src = json.load(f)
-    cells = {c["name"]: c for c in src["cells"] if isinstance(c, dict) and "name" in c}
-    res2_base = cells["RES2"]
 
     out_cells = []
-    for name, variant_ops, pad in VARIANTS:
-        out_cells.append(build_concrete(name, res2_base, variant_ops, pad))
 
-    # Carry RPPO* cells through unchanged - they wrap the RES* cells via SPICE.
+    # Single unit (parallel mode handles N=1 cleanly: top trunk + bottom trunk).
+    out_cells.append(build_variant("RES1", 1, "P"))
+
+    # Series variants (R = N * R_unit). Names match the legacy cells so
+    # RPPO2 / RPPO4 / RPPO8 / RPPO16 keep working.
+    for N in (2, 4, 8, 16):
+        out_cells.append(build_variant(f"RES{N}", N, "S"))
+
+    # Parallel variants (R = R_unit / N).
+    for N in (2, 4, 8, 16):
+        out_cells.append(build_variant(f"RES_P{N}", N, "P"))
+
+    # Carry RPPO* cells through unchanged.
     for c in src["cells"]:
         if isinstance(c, dict) and c.get("name", "").startswith("RPPO"):
             out_cells.append(c)
