@@ -10,7 +10,7 @@
 	},
 	"include" : [
 		"dmos_sky130nm_core.json",
-		"resistors.json",
+		"resistors_uniform.json",
 		"dig.json",
 		"capacitor.json",
 		"components.json"
