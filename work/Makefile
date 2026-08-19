@@ -11,6 +11,15 @@ include ../tech/make/core.make
 LIB=JNW_TR_SKY130A
 CELL=JNWTR_TOP
 PREFIX=
+
+#- The top tile is built from tap-less leaf cells whose bulk connects by
+#- abutment, so it must be judged flat. The flat flow resolves symmetric
+#- gates by property, which netgen flags as property errors even when the
+#- devices are identical; skip those and rely on the per-cell runs.
+ifeq (${CELL},JNWTR_TOP)
+LVSTCL=lvsflat.tcl
+OPT=--noprop
+endif
 #- Provide cells you want to check for the lvsall drcall commands
 #CELLS = SUN_TR NCHDL PCHDL PCHL NCHL NCHDLA PCHDLA PCHDLCM NCHDLCM NCHLA PCHLA PCHLCM NCHLCM NCHDLCM2 PCHDLCM2 CPCHDLCM2 CNCHDLCM2 RG12TRIX1_CV CAP_10 CAP_20
 
